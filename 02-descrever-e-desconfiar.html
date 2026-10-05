@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-PT" xml:lang="pt-PT"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Prática baseada na evidência, com exemplos de terapia da fala e neurodesenvolvimento. Um livro em construção, de Joana Miguel.">
+
+<title>2&nbsp; O que é o 21,6 em “38,9 ± 21,6”? – E agora? O que fazemos com a evidência?</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./03-o-valor-p.html" rel="next">
+<link href="./01-ler-um-resultado.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-1e35e26ed42fbdbb4830d98ef92e4168.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-9081225e56676ee46993ba8046452d09.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-1e35e26ed42fbdbb4830d98ef92e4168.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<script src="quiz.js"></script>
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-ler-um-resultado.html">Ler números</a></li><li class="breadcrumb-item"><a href="./02-descrever-e-desconfiar.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é o <span class="hl">21,6</span> em “38,9 ± 21,6”?</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">E agora?<br>O que fazemos com a evidência?</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="mailto:joana.miguel@caidi.pt" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope"></i></a>
+    <a href="https://github.com/JoBeaMi/pbe" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo escuro"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefácio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./como-usar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Como usar este livro</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Ler números</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-ler-um-resultado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">O que diz <span class="hl">uma frase de resultados</span>?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-descrever-e-desconfiar.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é o <span class="hl">21,6</span> em “38,9 ± 21,6”?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-o-valor-p.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O que quer dizer <span class="hl">p &lt; ,01</span>?</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Percursos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./percursos/mptf-ii-2026.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MPTF II, ESSAlcoitão, 2026/27</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bibliografia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Para ler</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referências</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Apêndices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossario.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossário</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#uma-percentagem-lê-se-com-o-número-de-pessoas-ao-lado" id="toc-uma-percentagem-lê-se-com-o-número-de-pessoas-ao-lado" class="nav-link active" data-scroll-target="#uma-percentagem-lê-se-com-o-número-de-pessoas-ao-lado"><span class="header-section-number">2.1</span> Uma percentagem lê-se com o número de pessoas ao lado</a></li>
+  <li><a href="#a-média-e-o-desvio-padrão" id="toc-a-média-e-o-desvio-padrão" class="nav-link" data-scroll-target="#a-média-e-o-desvio-padrão"><span class="header-section-number">2.2</span> A média e o desvio-padrão</a></li>
+  <li><a href="#o-tipo-de-medida-decide-o-que-se-pode-calcular" id="toc-o-tipo-de-medida-decide-o-que-se-pode-calcular" class="nav-link" data-scroll-target="#o-tipo-de-medida-decide-o-que-se-pode-calcular"><span class="header-section-number">2.3</span> O tipo de medida decide o que se pode calcular</a></li>
+  <li><a href="#como-ler-uma-tabela-1" id="toc-como-ler-uma-tabela-1" class="nav-link" data-scroll-target="#como-ler-uma-tabela-1"><span class="header-section-number">2.4</span> Como ler uma Tabela 1</a></li>
+  <li><a href="#desconfiar-do-gráfico-onde-começa-o-eixo" id="toc-desconfiar-do-gráfico-onde-começa-o-eixo" class="nav-link" data-scroll-target="#desconfiar-do-gráfico-onde-começa-o-eixo"><span class="header-section-number">2.5</span> Desconfiar do gráfico: onde começa o eixo</a></li>
+  <li><a href="#duas-coisas-que-variam-juntas-correlação-e-causa" id="toc-duas-coisas-que-variam-juntas-correlação-e-causa" class="nav-link" data-scroll-target="#duas-coisas-que-variam-juntas-correlação-e-causa"><span class="header-section-number">2.6</span> Duas coisas que variam juntas: correlação e causa</a>
+  <ul class="collapse">
+  <li><a href="#o-que-a-distribuição-ao-acaso-garante" id="toc-o-que-a-distribuição-ao-acaso-garante" class="nav-link" data-scroll-target="#o-que-a-distribuição-ao-acaso-garante"><span class="header-section-number">2.6.1</span> O que a distribuição ao acaso garante</a></li>
+  </ul></li>
+  <li><a href="#desconfiar-do-instrumento-fiabilidade-e-validade" id="toc-desconfiar-do-instrumento-fiabilidade-e-validade" class="nav-link" data-scroll-target="#desconfiar-do-instrumento-fiabilidade-e-validade"><span class="header-section-number">2.7</span> Desconfiar do instrumento: fiabilidade e validade</a></li>
+  <li><a href="#um-rastreio-que-acerta-90" id="toc-um-rastreio-que-acerta-90" class="nav-link" data-scroll-target="#um-rastreio-que-acerta-90"><span class="header-section-number">2.8</span> Um rastreio que “acerta 90 %”</a></li>
+  <li><a href="#o-que-fica" id="toc-o-que-fica" class="nav-link" data-scroll-target="#o-que-fica"><span class="header-section-number">2.9</span> O que fica</a></li>
+  <li><a href="#exercícios" id="toc-exercícios" class="nav-link" data-scroll-target="#exercícios"><span class="header-section-number">2.10</span> Exercícios</a></li>
+  <li><a href="#para-ler-mais" id="toc-para-ler-mais" class="nav-link" data-scroll-target="#para-ler-mais"><span class="header-section-number">2.11</span> Para ler mais</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-ler-um-resultado.html">Ler números</a></li><li class="breadcrumb-item"><a href="./02-descrever-e-desconfiar.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é o <span class="hl">21,6</span> em “38,9 ± 21,6”?</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é o <span class="hl">21,6</span> em “38,9 ± 21,6”?</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>O estudo é um ensaio controlado, não aleatorizado, com 36 crianças em idade pré-escolar com dificuldades na pragmática, isto é, no uso da linguagem em situações sociais <span class="citation" data-cites="pereira2025">(<a href="referencias.html#ref-pereira2025" role="doc-biblioref">Pereira et al., 2025</a>)</span>. As crianças tinham perturbação do espetro do autismo (PEA) ou perturbação do desenvolvimento da linguagem (PDL). Vinte e duas ficaram no grupo experimental, que fez 24 sessões de um programa de intervenção com uma terapeuta da fala, e catorze ficaram em lista de espera, como grupo de controlo. Quase todos os artigos sobre intervenções começam por uma tabela que descreve os participantes antes de a intervenção começar, a que se costuma chamar Tabela 1. A leitura que se segue é a que fazemos na aula.</p>
+<div class="fio">
+<div class="msg">
+<div class="quem">
+O artigo
+</div>
+<div class="clip">
+<p>Grupo de controlo (n = 14) e grupo experimental (n = 22), antes da intervenção.</p>
+<p>Sexo masculino: <span class="mk">8 (57,1)</span> e 16 (72,7)</p>
+<p>TL-ALPE: <span class="mk p">38,9 ± 21,6</span> e 41,0 ± 27,8 <span class="src">Pereira et al.&nbsp;(2025), Autism, 29(3), duas linhas da Tabela 1, p.&nbsp;732</span></p>
+</div>
+</div>
+<div class="msg turma">
+<div class="quem">
+A turma, no quadro (exemplo)
+</div>
+<p><span class="b">57,1 é a percentagem de rapazes. De quantos?</span> <span class="b">o 21,6 é a margem de erro</span> <span class="b">38,9 mais ou menos 21,6: as crianças estão entre 17 e 60</span> <span class="b">TL-ALPE é um teste?</span></p>
+</div>
+<div class="msg">
+<div class="quem">
+A explicação
+</div>
+<div class="jm">
+<p>antes de leres o resultado de um estudo, lê como foram formados os grupos e como eram as pessoas à partida. É aí que se decide o que a conclusão pode dizer.</p>
+</div>
+<p>As duas linhas têm formas diferentes porque descrevem coisas de tipos diferentes. O sexo é uma categoria: conta-se quantas crianças há em cada uma e faz-se a percentagem. A pontuação num teste de linguagem (o TL-ALPE é um teste de linguagem para crianças portuguesas em idade pré-escolar) é uma quantidade: resume-se com a média e com um segundo número, o desvio-padrão, que é o 21,6. Vemos primeiro as percentagens e depois o desvio-padrão.</p>
+</div>
+</div>
+<section id="uma-percentagem-lê-se-com-o-número-de-pessoas-ao-lado" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="uma-percentagem-lê-se-com-o-número-de-pessoas-ao-lado"><span class="header-section-number">2.1</span> Uma percentagem lê-se com o número de pessoas ao lado</h2>
+<p>“8 (57,1)” quer dizer oito rapazes, que são 57,1 % do grupo de controlo. O grupo tem catorze crianças, e oito em catorze são 57,1 %. No grupo experimental, “16 (72,7)” são dezasseis rapazes em vinte e duas crianças.</p>
+<p>A percentagem sozinha não chega. Um resultado de “33 % dos utentes melhoraram” pode ser um utente em três, e com três pessoas uma só muda tudo: se esse utente não tivesse melhorado, o resultado seria 0 %. O exemplo é adaptado de <span class="citation" data-cites="rubin2010">Rubin (<a href="referencias.html#ref-rubin2010" role="doc-biblioref">2010, p. 6</a>)</span>. Quando leres uma percentagem, procura sempre de quantos.</p>
+</section>
+<section id="a-média-e-o-desvio-padrão" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="a-média-e-o-desvio-padrão"><span class="header-section-number">2.2</span> A média e o desvio-padrão</h2>
+<p>Em “38,9 ± 21,6”, o primeiro número é a média das catorze crianças do grupo de controlo no teste de linguagem. O segundo é o desvio-padrão.</p>
+<div class="nums">
+<div class="num">
+38,9<small>média do grupo no teste</small>
+</div>
+<div class="num">
+21,6<small>desvio-padrão: quanto as crianças variam</small>
+</div>
+</div>
+<p>O desvio-padrão é a distância típica entre cada criança e a média do grupo. Diz quão espalhadas estão as pontuações. Neste grupo, uma criança com 17 pontos e outra com 60 estão, cada uma, a cerca de um desvio-padrão da média, uma abaixo e outra acima, e nenhuma das duas é invulgar no grupo.</p>
+<p>Quando o desvio-padrão é pequeno em comparação com a média, as crianças são parecidas umas com as outras e a média descreve bem cada uma. Quando é grande, como aqui, em que é mais de metade da média, o grupo é heterogéneo e a média descreve mal cada criança. Nas cinco crianças do <a href="./01-ler-um-resultado.html">capítulo 1</a>, a média das reduções era 20 % e o desvio-padrão era de 44,7 pontos percentuais: era a variação que a frase “em média diminuíram 20 %” não mostrava.</p>
+<p>O desvio-padrão descreve as pessoas. Não é uma margem de erro, nem é o intervalo de confiança, que descreve a incerteza de um resultado e aparece no <a href="./03-o-valor-p.html">capítulo 3</a>. E as crianças do grupo não estão todas “entre 17 e 60”: se as pontuações tiverem a forma habitual, com muitas crianças perto da média e poucas longe, cerca de dois terços ficam a menos de um desvio-padrão da média, e as restantes ficam mais longe.</p>
+<div class="quiz" data-certa="2">
+<p class="enunciado">
+Q2.1 Dois grupos têm a mesma média num teste, 40 pontos. No grupo A o desvio-padrão é 5; no grupo B é 25. O que é que isto diz?
+</p>
+<label><input type="radio" name="q21" value="1"> o grupo B tem melhores resultados</label> <label><input type="radio" name="q21" value="2"> no grupo A as crianças são parecidas umas com as outras; no grupo B há crianças com pontuações muito baixas e muito altas</label> <label><input type="radio" name="q21" value="3"> o resultado do grupo B tem mais erro</label> <button type="button">Verificar</button> <span class="resultado"></span>
+<p class="explicacao">
+O desvio-padrão descreve quanto as pessoas variam à volta da média. Não diz que um grupo é melhor, e não mede o erro do estudo.
+</p>
+</div>
+</section>
+<section id="o-tipo-de-medida-decide-o-que-se-pode-calcular" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="o-tipo-de-medida-decide-o-que-se-pode-calcular"><span class="header-section-number">2.3</span> O tipo de medida decide o que se pode calcular</h2>
+<p>O sexo aparece com contagem e percentagem, e o teste de linguagem com média e desvio-padrão, porque são medidas de níveis diferentes <span class="citation" data-cites="irwin2026">(<a href="referencias.html#ref-irwin2026" role="doc-biblioref">Irwin &amp; Donai, 2026, pp. 123–126</a>)</span>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nível de medida</th>
+<th>O que é</th>
+<th>Exemplos</th>
+<th>Como se resume</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nominal</td>
+<td>Categorias sem ordem</td>
+<td>Sexo, diagnóstico, sim ou não</td>
+<td>Contagem e percentagem</td>
+</tr>
+<tr class="even">
+<td>Ordinal</td>
+<td>Categorias com ordem, sem distâncias iguais entre elas</td>
+<td>Gravidade ligeira, moderada, grave</td>
+<td>Contagem e percentagem; mediana</td>
+</tr>
+<tr class="odd">
+<td>Intervalar e de razão</td>
+<td>Quantidades com distâncias iguais</td>
+<td>Pontos de um teste, idade em meses</td>
+<td>Média e desvio-padrão; ou mediana</td>
+</tr>
+</tbody>
+</table>
+<p>Não se faz a média de categorias. A média de uma escala ordinal é discutível, porque a distância entre “ligeiro” e “moderado” não é necessariamente igual à distância entre “moderado” e “grave”. Quando uma quantidade tem valores muito afastados dos outros, ou quando a maior parte das pessoas está de um dos lados, a mediana descreve melhor o grupo do que a média, e costuma vir acompanhada da amplitude interquartil: o intervalo entre o valor que deixa um quarto das pessoas abaixo e o que deixa um quarto acima.</p>
+</section>
+<section id="como-ler-uma-tabela-1" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="como-ler-uma-tabela-1"><span class="header-section-number">2.4</span> Como ler uma Tabela 1</h2>
+<p>Quatro perguntas, por esta ordem. Quantas pessoas há em cada grupo. Quem são: idade, sexo, diagnóstico, cada característica com o número e a percentagem. Como estavam antes da intervenção em cada medida: média e desvio-padrão, ou mediana e amplitude interquartil. E o que a tabela não mostra e fazia falta.</p>
+<p>Na tabela deste artigo, os dois grupos tinham idades quase iguais (54,2 e 53,9 meses, em média) e pontuações parecidas no teste de linguagem (38,9 e 41,0), com desvios-padrão grandes nos dois. Os grupos não tinham o mesmo tamanho: catorze e vinte e duas crianças.</p>
+</section>
+<section id="desconfiar-do-gráfico-onde-começa-o-eixo" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="desconfiar-do-gráfico-onde-começa-o-eixo"><span class="header-section-number">2.5</span> Desconfiar do gráfico: onde começa o eixo</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="imagens/02-eixo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Os mesmos dois números, 41 e 43, em dois gráficos. Os números são construídos."><img src="imagens/02-eixo.png" class="img-fluid figure-img" style="width:100.0%" alt="Dois gráficos de barras com os valores 41 e 43. No da esquerda o eixo vertical começa em 40 e a segunda barra parece o triplo da primeira. No da direita o eixo começa em 0 e as duas barras são quase iguais."></a></p>
+<figcaption>Os mesmos dois números, 41 e 43, em dois gráficos. Os números são construídos.</figcaption>
+</figure>
+</div>
+<p>Os dois gráficos mostram os mesmos números. No da esquerda o eixo começa em 40, e a barra do programa parece muito maior do que a outra. No da direita o eixo começa em zero, e a diferença de 2 pontos vê-se com o tamanho que tem. Quando uma barra representa uma quantidade, o eixo começa em zero. Quando não pode começar em zero, como numa pontuação padronizada cuja média é 100, o gráfico deve mostrar a escala e o leitor deve olhar para ela antes de olhar para as barras.</p>
+</section>
+<section id="duas-coisas-que-variam-juntas-correlação-e-causa" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="duas-coisas-que-variam-juntas-correlação-e-causa"><span class="header-section-number">2.6</span> Duas coisas que variam juntas: correlação e causa</h2>
+<p>Uma notícia construída para este capítulo: “Estudo com 400 crianças: as que passam mais de duas horas por dia ao ecrã têm menos vocabulário aos 3 anos.”</p>
+<p>O estudo descreve uma correlação: nas 400 crianças, as duas medidas variam juntas. Isso não chega para dizer que o ecrã causa a falta de vocabulário, por duas razões.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="imagens/02-confundimento.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Uma terceira variável pode produzir a relação entre as outras duas. O exemplo é construído."><img src="imagens/02-confundimento.png" class="img-fluid figure-img" style="width:90.0%" alt="Diagrama com três caixas. Da caixa interação pais-criança saem duas setas: uma para horas de ecrã e outra para vocabulário aos 3 anos. Entre ecrã e vocabulário há uma seta a tracejado que representa a correlação observada."></a></p>
+<figcaption>Uma terceira variável pode produzir a relação entre as outras duas. O exemplo é construído.</figcaption>
+</figure>
+</div>
+<p>A primeira é uma terceira variável. Pais que interagem menos com a criança podem deixá-la mais tempo ao ecrã e, ao mesmo tempo, falar-lhe menos. A interação produz as duas coisas, e o ecrã e o vocabulário aparecem ligados sem que um cause o outro. A isto chama-se confundimento.</p>
+<p>A segunda é a direção. Uma criança com menos linguagem pode ser posta mais vezes ao ecrã. Nesse caso é a linguagem que influencia o ecrã.</p>
+<p>Outra notícia construída: “As 20 crianças que fizeram o programa ganharam em média 12 pontos em seis meses.” Aqui falta com quem comparar. Em seis meses, crianças de 3 e 4 anos ganham pontos de linguagem sem programa nenhum: crescem, vão ao jardim de infância, falam mais. Para saber quanto dos 12 pontos é do programa, é preciso um grupo parecido que não o fez, e ver quanto esse grupo ganhou no mesmo tempo.</p>
+<section id="o-que-a-distribuição-ao-acaso-garante" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="o-que-a-distribuição-ao-acaso-garante"><span class="header-section-number">2.6.1</span> O que a distribuição ao acaso garante</h3>
+<p>Ter um grupo de comparação não chega; os dois grupos têm de ser parecidos antes da intervenção, também naquilo que ninguém mediu: a motivação dos pais, a escolaridade, o que cada família faz em casa. A única maneira de o conseguir é distribuir as pessoas pelos grupos ao acaso, porque assim nenhuma característica vai sistematicamente mais para um grupo do que para o outro <span class="citation" data-cites="ferreira2016">(<a href="referencias.html#ref-ferreira2016" role="doc-biblioref">Ferreira &amp; Patino, 2016</a>)</span>. As diferenças que sobram entre os grupos são só as do acaso, e é delas que tratam o intervalo de confiança e o valor p do <a href="./03-o-valor-p.html">capítulo 3</a>. Só funciona se ninguém escolher quem vai para onde.</p>
+<p>No estudo deste capítulo houve grupo de controlo, e as crianças não foram distribuídas ao acaso. Os resultados são mais fortes do que os da notícia das 20 crianças, e menos do que seriam num ensaio aleatorizado. Os autores escrevem-no nas limitações: as crianças não foram distribuídas aleatoriamente, e os pais e os educadores, que responderam a duas das medidas, sabiam em que grupo a criança estava, o que pode ter influenciado as respostas <span class="citation" data-cites="pereira2025">(<a href="referencias.html#ref-pereira2025" role="doc-biblioref">Pereira et al., 2025, p. 736</a>)</span>. No estudo do <a href="./01-ler-um-resultado.html">capítulo 1</a> houve sorteio, e por isso a diferença de 5,3 pontos pode atribuir-se à intervenção, com a incerteza que o intervalo mostra.</p>
+<div class="def">
+<p>A palavra “causa” depende do desenho do estudo. Uma correlação entre duas medidas não permite dizer que uma causa a outra. Uma melhoria entre o antes e o depois, sem grupo de comparação, não permite dizer que foi a intervenção. A distribuição ao acaso por dois grupos é o desenho que permite atribuir a diferença à intervenção.</p>
+</div>
+<div class="quiz" data-certa="3">
+<p class="enunciado">
+Q2.2 “As crianças que frequentaram terapia da fala em grupo tiveram melhores resultados do que as que frequentaram terapia individual. As famílias escolheram a modalidade.” Pode concluir-se que a terapia em grupo é melhor?
+</p>
+<label><input type="radio" name="q22" value="1"> sim, porque há dois grupos</label> <label><input type="radio" name="q22" value="2"> sim, se a diferença for grande</label> <label><input type="radio" name="q22" value="3"> não: as famílias que escolheram uma modalidade podem ser diferentes das que escolheram a outra, e a diferença pode vir daí</label> <button type="button">Verificar</button> <span class="resultado"></span>
+<p class="explicacao">
+Há grupo de comparação, mas foram as famílias a escolher. As crianças com dificuldades mais ligeiras podem ter ido mais para o grupo, por exemplo. O tamanho da diferença não resolve o problema; só a distribuição ao acaso o resolve.
+</p>
+</div>
+</section>
+</section>
+<section id="desconfiar-do-instrumento-fiabilidade-e-validade" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="desconfiar-do-instrumento-fiabilidade-e-validade"><span class="header-section-number">2.7</span> Desconfiar do instrumento: fiabilidade e validade</h2>
+<p>Os números de um estudo vêm de instrumentos: testes, escalas, questionários. Um instrumento tem duas qualidades diferentes <span class="citation" data-cites="irwin2026">(<a href="referencias.html#ref-irwin2026" role="doc-biblioref">Irwin &amp; Donai, 2026, pp. 127–131</a>)</span>.</p>
+<p>A fiabilidade é a consistência: o instrumento dá o mesmo resultado quando se repete a medida, quando muda o avaliador e quando se comparam os itens entre si. A validade é medir aquilo que se diz medir. São qualidades diferentes, e um instrumento pode ser fiável sem ser válido. Uma balança que marca sempre dois quilos a mais é fiável e não é válida.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="imagens/02-alvos.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Fiabilidade e validade. Cada ponto é uma medida; o centro do alvo é o valor verdadeiro."><img src="imagens/02-alvos.png" class="img-fluid figure-img" style="width:100.0%" alt="Três alvos. No primeiro os pontos estão juntos e longe do centro: fiável, não válido. No segundo estão espalhados: nem fiável nem válido. No terceiro estão juntos no centro: fiável e válido."></a></p>
+<figcaption>Fiabilidade e validade. Cada ponto é uma medida; o centro do alvo é o valor verdadeiro.</figcaption>
+</figure>
+</div>
+<p>Os artigos indicam a fiabilidade dos instrumentos com coeficientes que vão de 0 a 1, ou com percentagens de acordo; quanto mais perto de 1, ou de 100 %, mais consistente é a medida. No estudo deste capítulo foram usados o TL-ALPE e a EAC, uma escala de competências comunicativas preenchida pelos pais e pelos educadores <span class="citation" data-cites="pereira2025">(<a href="referencias.html#ref-pereira2025" role="doc-biblioref">Pereira et al., 2025, p. 731</a>)</span>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>O que o coeficiente mede</th>
+<th>Como se chama</th>
+<th>Valores no artigo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Os itens concordam entre si</td>
+<td>Consistência interna (alfa de Cronbach)</td>
+<td>0,929 na escala EAC; 0,825 a 0,951 no TL-ALPE</td>
+</tr>
+<tr class="even">
+<td>A mesma criança, avaliada duas vezes, dá o mesmo resultado</td>
+<td>Teste-reteste</td>
+<td>0,943 a 1,000 na escala EAC</td>
+</tr>
+<tr class="odd">
+<td>Dois avaliadores dão a mesma pontuação</td>
+<td>Acordo entre avaliadores</td>
+<td>95,2 % no TL-ALPE</td>
+</tr>
+</tbody>
+</table>
+<p>Estes números garantem consistência de três tipos. Nenhum garante que a escala mede o que diz medir; isso é a validade, que se estuda de outras maneiras: vendo se os itens cobrem tudo o que se quer medir (validade de conteúdo), se as pontuações concordam com as de um teste já estabelecido ou preveem o que acontece mais tarde (validade de critério), e se se comportam como a teoria diz, por exemplo subindo com a idade e distinguindo crianças com e sem perturbação (validade de constructo).</p>
+<p>No mesmo artigo, a escala EAC foi preenchida pelos pais e pelos educadores de cada criança. Antes da intervenção, a correlação entre as respostas de uns e de outros era de 0,635. O coeficiente de correlação vai de −1 a 1: zero quer dizer que não há relação e 1 que a relação é perfeita. Pais e educadores concordavam só em parte, porque veem a criança em contextos diferentes ou reparam em coisas diferentes.</p>
+</section>
+<section id="um-rastreio-que-acerta-90" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="um-rastreio-que-acerta-90"><span class="header-section-number">2.8</span> Um rastreio que “acerta 90 %”</h2>
+<p>O caso é construído. Um rastreio de linguagem é aplicado a 1000 crianças de 3 anos, das quais 100 têm atraso de linguagem. Diz-se que o rastreio “acerta 90 %”, e isso são duas coisas <span class="citation" data-cites="irwin2026">(<a href="referencias.html#ref-irwin2026" role="doc-biblioref">Irwin &amp; Donai, 2026, pp. 247–249</a>)</span>.</p>
+<p>A sensibilidade é a proporção das crianças com atraso a quem o rastreio dá positivo: 90 em 100. Falha 10. A especificidade é a proporção das crianças sem atraso a quem o rastreio dá negativo: 810 em 900. Dá positivo, por engano, a 90.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="imagens/02-rastreio.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="O rastreio do exemplo: 1000 crianças, 100 com atraso; sensibilidade e especificidade de 90 %."><img src="imagens/02-rastreio.png" class="img-fluid figure-img" style="width:90.0%" alt="Tabela de dupla entrada. Rastreio positivo: 90 crianças com atraso, verdadeiros positivos, e 90 sem atraso, falsos positivos. Rastreio negativo: 10 com atraso, falsos negativos, e 810 sem atraso, verdadeiros negativos."></a></p>
+<figcaption>O rastreio do exemplo: 1000 crianças, 100 com atraso; sensibilidade e especificidade de 90 %.</figcaption>
+</figure>
+</div>
+<p>Agora a pergunta que interessa à família: a criança teve resultado positivo; qual é a probabilidade de ter mesmo atraso? Tiveram resultado positivo 180 crianças, e só 90 delas têm atraso. É metade. A este número chama-se valor preditivo positivo: 90 em 180, ou 50 %.</p>
+<p>Se o mesmo rastreio for usado onde só 2 % das crianças têm atraso, em 1000 crianças há 20 com atraso, das quais 18 têm resultado positivo, e 980 sem atraso, das quais 98 têm resultado positivo por engano. O valor preditivo positivo passa a ser 18 em 116, ou 15,5 %. O teste é o mesmo, mas a frequência do atraso na população é outra.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Medida</th>
+<th>Como se calcula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sensibilidade</td>
+<td>verdadeiros positivos a dividir por todos os que têm o problema</td>
+</tr>
+<tr class="even">
+<td>Especificidade</td>
+<td>verdadeiros negativos a dividir por todos os que não têm o problema</td>
+</tr>
+<tr class="odd">
+<td>Valor preditivo positivo</td>
+<td>verdadeiros positivos a dividir por todos os resultados positivos</td>
+</tr>
+<tr class="even">
+<td>Valor preditivo negativo</td>
+<td>verdadeiros negativos a dividir por todos os resultados negativos</td>
+</tr>
+</tbody>
+</table>
+<div class="def">
+<p>A sensibilidade e a especificidade são características do teste. O valor preditivo depende também da frequência do problema na população em que o teste é usado, e é ele que responde à pessoa que recebe o resultado. Um resultado positivo num rastreio pede uma avaliação completa; não é um diagnóstico.</p>
+</div>
+<div class="quiz" data-certa="2">
+<p class="enunciado">
+Q2.3 Um rastreio tem sensibilidade de 90 % e especificidade de 90 %. Numa população em que 10 % das crianças têm atraso, de cada 100 crianças com resultado positivo, quantas têm mesmo atraso?
+</p>
+<label><input type="radio" name="q23" value="1"> 90</label> <label><input type="radio" name="q23" value="2"> 50</label> <label><input type="radio" name="q23" value="3"> 10</label> <button type="button">Verificar</button> <span class="resultado"></span>
+<p class="explicacao">
+Em 1000 crianças, o rastreio dá positivo a 90 das 100 com atraso e, por engano, a 90 das 900 sem atraso. São 180 resultados positivos, e só metade (90) são de crianças com atraso.
+</p>
+</div>
+<p>Uma nota sobre as pontuações de idade equivalente, que aparecem em muitos relatórios. Uma idade equivalente diz a idade em que aquela pontuação é típica. Não diz onde a criança está em relação às crianças da sua idade, nem quanto é habitual variar. Haynes e Pindzola, citados por <span class="citation" data-cites="irwin2026">Irwin &amp; Donai (<a href="referencias.html#ref-irwin2026" role="doc-biblioref">2026, p. 249</a>)</span>, chamam-lhes “the least useful and most dangerous scores to be obtained from standardized tests”. Para decidir se uma criança está abaixo do esperado usam-se pontuações padronizadas.</p>
+</section>
+<section id="o-que-fica" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="o-que-fica"><span class="header-section-number">2.9</span> O que fica</h2>
+<p>Uma percentagem lê-se com o número de pessoas ao lado, e uma média com o desvio-padrão ao lado.</p>
+<p>A palavra “causa” vem do desenho do estudo: sem grupo de comparação, ou sem distribuição ao acaso, a conclusão tem de ser mais modesta.</p>
+<p>A sensibilidade e a especificidade de um rastreio não dizem quantas crianças com resultado positivo têm mesmo o problema; isso é o valor preditivo, que muda com a população.</p>
+</section>
+<section id="exercícios" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="exercícios"><span class="header-section-number">2.10</span> Exercícios</h2>
+<ol type="1">
+<li>Na Tabela 1 do artigo deste capítulo, a linha da idade, em meses, diz “54.2 ± 9.0” para o grupo de controlo e “53.9 ± 7.6” para o grupo experimental <span class="citation" data-cites="pereira2025">(<a href="referencias.html#ref-pereira2025" role="doc-biblioref">Pereira et al., 2025, p. 732</a>)</span>. O que é cada número? Uma criança de 45 meses é invulgar no grupo de controlo?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Resposta">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resposta
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>54,2 e 53,9 são as médias de idade dos dois grupos, em meses; 9,0 e 7,6 são os desvios-padrão. Uma criança de 45 meses está a cerca de um desvio-padrão abaixo da média do grupo de controlo (54,2 − 9,0 = 45,2), e por isso não é invulgar.</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Caso construído. Um rastreio tem sensibilidade de 80 % e especificidade de 95 %. É aplicado a 2000 crianças, das quais 100 têm atraso de linguagem. Quantas crianças têm resultado positivo, e quantas dessas têm mesmo atraso?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Resposta">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resposta
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Das 100 com atraso, o rastreio dá positivo a 80. Das 1900 sem atraso, dá negativo a 95 %, isto é, a 1805, e positivo por engano a 95. Há 175 resultados positivos, e 80 são de crianças com atraso: o valor preditivo positivo é 80 em 175, cerca de 46 %.</p>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>“Num inquérito a pais, as crianças que dormem menos horas têm mais dificuldades de atenção na escola.” Escreve duas explicações para este resultado que não sejam “dormir pouco causa dificuldades de atenção”.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Resposta">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resposta
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Por exemplo: uma terceira variável, como a rotina da família ou a ansiedade da criança, pode produzir as duas coisas; ou a direção pode ser a contrária, com as crianças que têm mais dificuldades de atenção a adormecerem mais tarde. O inquérito mostra que as duas coisas variam juntas e não permite escolher entre estas explicações.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="para-ler-mais" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="para-ler-mais"><span class="header-section-number">2.11</span> Para ler mais</h2>
+<p><span class="citation" data-cites="irwin2026">Irwin &amp; Donai (<a href="referencias.html#ref-irwin2026" role="doc-biblioref">2026</a>)</span>: pp.&nbsp;123–131 sobre níveis de medida, validade e fiabilidade; pp.&nbsp;157–164 sobre estatística descritiva; pp.&nbsp;247–249 sobre sensibilidade, especificidade e valores preditivos. <span class="citation" data-cites="ferreira2016">Ferreira &amp; Patino (<a href="referencias.html#ref-ferreira2016" role="doc-biblioref">2016</a>)</span> explicam num texto curto, em português e em inglês, o que a aleatorização garante. O artigo deste capítulo é <span class="citation" data-cites="pereira2025">Pereira et al. (<a href="referencias.html#ref-pereira2025" role="doc-biblioref">2025</a>)</span>.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-ferreira2016" class="csl-entry" role="listitem">
+Ferreira, J. C., &amp; Patino, C. M. (2016). Randomization: beyond tossing a coin. <em>Jornal Brasileiro de Pneumologia</em>, <em>42</em>(5), 310. <a href="https://doi.org/10.1590/s1806-37562016000000296">https://doi.org/10.1590/s1806-37562016000000296</a>
+</div>
+<div id="ref-irwin2026" class="csl-entry" role="listitem">
+Irwin, D. L., &amp; Donai, J. J. (2026). <em>Clinical research methods in speech-language pathology and audiology</em> (4.ª ed.). Plural Publishing.
+</div>
+<div id="ref-pereira2025" class="csl-entry" role="listitem">
+Pereira, T., Ramalho, A. M., Sá Couto, P., &amp; Lousada, M. (2025). Exploring the effectiveness of the pragmatic intervention programme (<span>PICP</span>) with children with autism spectrum disorder and developmental language disorder: A non-randomised controlled trial. <em>Autism</em>, <em>29</em>(3), 726–739. <a href="https://doi.org/10.1177/13623613241287017">https://doi.org/10.1177/13623613241287017</a>
+</div>
+<div id="ref-rubin2010" class="csl-entry" role="listitem">
+Rubin, A. (2010). <em>Statistics for evidence-based practice and evaluation</em> (2.ª ed.). Brooks/Cole, Cengage Learning.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/joanamiguel\.pt\/pbe\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./01-ler-um-resultado.html" class="pagination-link" aria-label="O que diz [uma frase de resultados]{.hl}?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">O que diz <span class="hl">uma frase de resultados</span>?</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./03-o-valor-p.html" class="pagination-link" aria-label="O que quer dizer [p &amp;lt; ,01]{.hl}?">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O que quer dizer <span class="hl">p &lt; ,01</span>?</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Joana Miguel</p>
+</div>   
+    <div class="nav-footer-center">
+<p>E agora? O que fazemos com a evidência?</p>
+</div>
+    <div class="nav-footer-right">
+<p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt">CC BY-NC-SA</a></p>
+</div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

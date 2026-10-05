@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-PT" xml:lang="pt-PT"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Prática baseada na evidência, com exemplos de terapia da fala e neurodesenvolvimento. Um livro em construção, de Joana Miguel.">
+
+<title>3&nbsp; O que quer dizer p &lt; ,01? – E agora? O que fazemos com a evidência?</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./percursos/mptf-ii-2026.html" rel="next">
+<link href="./02-descrever-e-desconfiar.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-1e35e26ed42fbdbb4830d98ef92e4168.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-9081225e56676ee46993ba8046452d09.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-1e35e26ed42fbdbb4830d98ef92e4168.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<script src="quiz.js"></script>
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-ler-um-resultado.html">Ler números</a></li><li class="breadcrumb-item"><a href="./03-o-valor-p.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O que quer dizer <span class="hl">p &lt; ,01</span>?</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">E agora?<br>O que fazemos com a evidência?</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="mailto:joana.miguel@caidi.pt" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope"></i></a>
+    <a href="https://github.com/JoBeaMi/pbe" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo escuro"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefácio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./como-usar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Como usar este livro</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Ler números</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-ler-um-resultado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">O que diz <span class="hl">uma frase de resultados</span>?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-descrever-e-desconfiar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é o <span class="hl">21,6</span> em “38,9 ± 21,6”?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-o-valor-p.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O que quer dizer <span class="hl">p &lt; ,01</span>?</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Percursos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./percursos/mptf-ii-2026.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MPTF II, ESSAlcoitão, 2026/27</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bibliografia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Para ler</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referências</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Apêndices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossario.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossário</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#uma-moeda-lançada-dez-vezes" id="toc-uma-moeda-lançada-dez-vezes" class="nav-link active" data-scroll-target="#uma-moeda-lançada-dez-vezes"><span class="header-section-number">3.1</span> Uma moeda lançada dez vezes</a></li>
+  <li><a href="#o-resultado-de-um-estudo-é-uma-estimativa" id="toc-o-resultado-de-um-estudo-é-uma-estimativa" class="nav-link" data-scroll-target="#o-resultado-de-um-estudo-é-uma-estimativa"><span class="header-section-number">3.2</span> O resultado de um estudo é uma estimativa</a></li>
+  <li><a href="#da-moeda-ao-estudo-o-valor-p" id="toc-da-moeda-ao-estudo-o-valor-p" class="nav-link" data-scroll-target="#da-moeda-ao-estudo-o-valor-p"><span class="header-section-number">3.3</span> Da moeda ao estudo: o valor p</a>
+  <ul class="collapse">
+  <li><a href="#porque-há-diferenças-entre-grupos-mesmo-sem-intervenção" id="toc-porque-há-diferenças-entre-grupos-mesmo-sem-intervenção" class="nav-link" data-scroll-target="#porque-há-diferenças-entre-grupos-mesmo-sem-intervenção"><span class="header-section-number">3.3.1</span> Porque há diferenças entre grupos mesmo sem intervenção</a></li>
+  <li><a href="#como-se-lê-um-valor-p" id="toc-como-se-lê-um-valor-p" class="nav-link" data-scroll-target="#como-se-lê-um-valor-p"><span class="header-section-number">3.3.2</span> Como se lê um valor p</a></li>
+  <li><a href="#o-que-o-valor-p-não-diz" id="toc-o-que-o-valor-p-não-diz" class="nav-link" data-scroll-target="#o-que-o-valor-p-não-diz"><span class="header-section-number">3.3.3</span> O que o valor p não diz</a></li>
+  </ul></li>
+  <li><a href="#estatisticamente-significativo-é-uma-convenção" id="toc-estatisticamente-significativo-é-uma-convenção" class="nav-link" data-scroll-target="#estatisticamente-significativo-é-uma-convenção"><span class="header-section-number">3.4</span> “Estatisticamente significativo” é uma convenção</a>
+  <ul class="collapse">
+  <li><a href="#significativo-não-quer-dizer-importante" id="toc-significativo-não-quer-dizer-importante" class="nav-link" data-scroll-target="#significativo-não-quer-dizer-importante"><span class="header-section-number">3.4.1</span> Significativo não quer dizer importante</a></li>
+  </ul></li>
+  <li><a href="#o-tamanho-do-efeito" id="toc-o-tamanho-do-efeito" class="nav-link" data-scroll-target="#o-tamanho-do-efeito"><span class="header-section-number">3.5</span> O tamanho do efeito</a>
+  <ul class="collapse">
+  <li><a href="#quantas-crianças-é-preciso-tratar-para-uma-melhorar" id="toc-quantas-crianças-é-preciso-tratar-para-uma-melhorar" class="nav-link" data-scroll-target="#quantas-crianças-é-preciso-tratar-para-uma-melhorar"><span class="header-section-number">3.5.1</span> Quantas crianças é preciso tratar para uma melhorar</a></li>
+  </ul></li>
+  <li><a href="#quando-o-resultado-não-é-significativo" id="toc-quando-o-resultado-não-é-significativo" class="nav-link" data-scroll-target="#quando-o-resultado-não-é-significativo"><span class="header-section-number">3.6</span> Quando o resultado não é significativo</a></li>
+  <li><a href="#os-testes-que-aparecem-nos-artigos" id="toc-os-testes-que-aparecem-nos-artigos" class="nav-link" data-scroll-target="#os-testes-que-aparecem-nos-artigos"><span class="header-section-number">3.7</span> Os testes que aparecem nos artigos</a>
+  <ul class="collapse">
+  <li><a href="#para-fazer-no-jamovi" id="toc-para-fazer-no-jamovi" class="nav-link" data-scroll-target="#para-fazer-no-jamovi"><span class="header-section-number">3.7.1</span> Para fazer no Jamovi</a></li>
+  </ul></li>
+  <li><a href="#a-frase-do-artigo-lida-outra-vez" id="toc-a-frase-do-artigo-lida-outra-vez" class="nav-link" data-scroll-target="#a-frase-do-artigo-lida-outra-vez"><span class="header-section-number">3.8</span> A frase do artigo, lida outra vez</a></li>
+  <li><a href="#o-que-fica" id="toc-o-que-fica" class="nav-link" data-scroll-target="#o-que-fica"><span class="header-section-number">3.9</span> O que fica</a></li>
+  <li><a href="#exercícios" id="toc-exercícios" class="nav-link" data-scroll-target="#exercícios"><span class="header-section-number">3.10</span> Exercícios</a></li>
+  <li><a href="#para-ler-mais" id="toc-para-ler-mais" class="nav-link" data-scroll-target="#para-ler-mais"><span class="header-section-number">3.11</span> Para ler mais</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-ler-um-resultado.html">Ler números</a></li><li class="breadcrumb-item"><a href="./03-o-valor-p.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O que quer dizer <span class="hl">p &lt; ,01</span>?</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O que quer dizer <span class="hl">p &lt; ,01</span>?</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>O estudo é o do capítulo 1: um ensaio aleatorizado com 97 crianças de 24 a 42 meses com atraso de linguagem, em que uma intervenção ensinada aos pais durante três meses foi comparada com os cuidados habituais <span class="citation" data-cites="roberts2015">(<a href="referencias.html#ref-roberts2015" role="doc-biblioref">Roberts &amp; Kaiser, 2015</a>)</span>. No capítulo 1 lemos os números da frase de resultados. Ficaram por ler o intervalo de confiança, o valor p e a palavra “significativamente”. A leitura que se segue é a que fazemos na aula, e começa com uma moeda.</p>
+<div class="fio">
+<div class="msg">
+<div class="quem">
+O artigo
+</div>
+<div class="clip">
+<p>Os cuidadores melhoraram o uso de todas as estratégias de facilitação da linguagem, como os turnos correspondidos (diferença média ajustada, intervenção menos controlo, 40; intervalo de confiança a 95 % de 34 a 46; <span class="mk">p &lt; ,01</span>). As crianças do grupo de intervenção tiveram competências de linguagem recetiva <span class="mk p">significativamente</span> melhores (5,3; intervalo de confiança a 95 % de 0,15 a 10,4), mas não de linguagem expressiva (0,37; −4,5 a 5,3; <span class="mk">p = ,88</span>). <span class="src">Roberts &amp; Kaiser (2015), Pediatrics, 135(4), resumo, secção Results; tradução da docente</span></p>
+</div>
+</div>
+<div class="msg turma">
+<div class="quem">
+A turma, no quadro (exemplo)
+</div>
+<p><span class="b">p é de probabilidade?</span> <span class="b">probabilidade de quê?</span> <span class="b">menos de 1 % de hipótese de estar errado</span> <span class="b">significativamente quer dizer muito melhores</span> <span class="b">34 a 46 é um intervalo de quê?</span></p>
+</div>
+<div class="msg">
+<div class="quem">
+A explicação
+</div>
+<div class="jm">
+<p>o valor p percebe-se melhor com uma moeda na mão do que com uma definição. Lança-a mesmo; demora um minuto.</p>
+</div>
+<p>Para ler o que falta na frase é preciso uma ideia que não está no artigo: o que o acaso produz sozinho, sem intervenção nenhuma. Essa ideia vê-se com uma moeda, e por isso o capítulo começa por aí e só depois volta às crianças.</p>
+<p>Este capítulo é mais longo do que os dois anteriores e não pede nenhum conhecimento de estatística. Pode ler-se em três vezes: primeiro a moeda e o intervalo de confiança; depois o valor p e a palavra “significativo”; por fim o tamanho do efeito, os resultados não significativos e os testes.</p>
+</div>
+</div>
+<section id="uma-moeda-lançada-dez-vezes" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="uma-moeda-lançada-dez-vezes"><span class="header-section-number">3.1</span> Uma moeda lançada dez vezes</h2>
+<p>Antes de leres mais, decide. Alguém lança uma moeda 10 vezes e saem 7 caras. Desconfias da moeda? E se saírem 9 caras?</p>
+<p>Agora pega numa moeda, lança-a 10 vezes e conta as caras. Se puderes, repete a série de 10 lançamentos mais quatro ou cinco vezes, ou pede a outras pessoas que façam o mesmo, e aponta o número de caras de cada série.</p>
+<p>Os números não saem todos iguais, e a moeda é sempre a mesma. A figura mostra o que acontece quando muita gente faz esta experiência com moedas normais, isto é, moedas em que cara e coroa têm a mesma probabilidade.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="imagens/03-moedas.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="O que uma moeda normal faz em 10 lançamentos. As percentagens são exatas: saem do cálculo das probabilidades, não de uma experiência."><img src="imagens/03-moedas.png" class="img-fluid figure-img" style="width:100.0%" alt="Gráfico de barras com o número de caras em 10 lançamentos, de 0 a 10. Cinco caras saem em 24,6 por cento das vezes; quatro ou seis caras em 20,5 por cento cada; três ou sete em 11,7 por cento cada; duas ou oito em 4,4 por cento cada; uma ou nove em 1,0 por cento cada; zero ou dez em 0,1 por cento cada. As barras de sete ou mais caras estão destacadas e somam 17 por cento; as de nove ou mais somam 1 por cento."></a></p>
+<figcaption>O que uma moeda normal faz em 10 lançamentos. As percentagens são exatas: saem do cálculo das probabilidades, não de uma experiência.</figcaption>
+</figure>
+</div>
+<p>A figura mostra duas coisas, e o resto do capítulo sai delas.</p>
+<p>A primeira é que o resultado varia de pessoa para pessoa, embora as moedas sejam todas iguais. Quem teve 3 caras e quem teve 7 lançou o mesmo tipo de moeda, e nenhum dos dois se enganou a contar. Um resultado sozinho dá uma ideia aproximada do que a moeda faz, com alguma margem de erro. Desta ideia sai o intervalo de confiança.</p>
+<p>A segunda é que alguns resultados são comuns e outros são raros. Com uma moeda normal, 4, 5 ou 6 caras saem em cerca de dois terços das vezes. Sete ou mais caras saem em 17 de cada 100 vezes. Nove ou mais caras saem em 1 de cada 100 vezes. Desta ideia sai o valor p.</p>
+<p>Com isto responde-se às duas perguntas do início. Sete caras em 10 acontecem muitas vezes só por acaso, e não chegam para desconfiar da moeda. Nove caras em 10 são raras: ou a pessoa teve muita sorte, ou a moeda não é normal.</p>
+<p>O raciocínio foi o seguinte. Não sabemos se a moeda está viciada. Perguntamos quantas vezes uma moeda normal daria tantas caras como as que saíram, ou ainda mais. Se a resposta for “quase nunca”, desconfiamos da moeda. Convém lembrar que “raro” não quer dizer “impossível”: numa sala com 25 pessoas, cada uma a lançar a sua moeda 10 vezes, há cerca de uma hipótese em quatro de alguém ter 9 ou 10 caras com uma moeda normal.</p>
+<div class="quiz" data-certa="1">
+<p class="enunciado">
+Q3.1 Lanças uma moeda 10 vezes e saem 8 caras. Com uma moeda normal, 8 ou mais caras saem em cerca de 5 de cada 100 vezes. O que podes dizer?
+</p>
+<label><input type="radio" name="q31" value="1"> um resultado assim é pouco comum com uma moeda normal, mas acontece: em 100 pessoas a fazer a experiência, espera-se que aconteça a cerca de 5</label> <label><input type="radio" name="q31" value="2"> a moeda está viciada, com 95 % de certeza</label> <label><input type="radio" name="q31" value="3"> a moeda é normal, porque 8 caras podem sair por acaso</label> <button type="button">Verificar</button> <span class="resultado"></span>
+<p class="explicacao">
+A conta dos 5 em 100 é feita a supor que a moeda é normal. Diz com que frequência uma moeda normal dá 8 ou mais caras; não diz qual é a probabilidade de a moeda estar viciada, nem prova que é normal.
+</p>
+</div>
+</section>
+<section id="o-resultado-de-um-estudo-é-uma-estimativa" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="o-resultado-de-um-estudo-é-uma-estimativa"><span class="header-section-number">3.2</span> O resultado de um estudo é uma estimativa</h2>
+<p>Se as autoras repetissem o estudo com outras 97 crianças com atraso de linguagem, a diferença na linguagem recetiva não voltava a ser exatamente 5,3. Outras crianças dariam outro número, próximo mas diferente, porque as crianças são diferentes umas das outras. É o que acontece com as moedas: cada série de 10 lançamentos dá o seu número de caras.</p>
+<p>As 97 crianças do estudo são a amostra. Todas as crianças com atraso de linguagem a quem a intervenção se podia aplicar são a população. O estudo mede a amostra para dizer alguma coisa sobre a população. O 5,3 é a estimativa que esta amostra dá; o efeito da intervenção na população não se conhece, e só se conheceria estudando todas as crianças. O intervalo de confiança serve para dizer entre que valores esse efeito desconhecido pode estar, tendo em conta que só se estudou uma amostra <span class="citation" data-cites="patino2015ic">(<a href="referencias.html#ref-patino2015ic" role="doc-biblioref">Patino &amp; Ferreira, 2015</a>)</span>.</p>
+<p>A figura seguinte faz com crianças o que fizemos com a moeda. Os números são construídos por computador, e por isso sabemos uma coisa que num estudo real nunca se sabe: o valor verdadeiro. Para simplificar, cada estudo da figura mede o ganho de um só grupo de crianças; com a diferença entre dois grupos passa-se o mesmo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="imagens/03-vinte-estudos.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Uma simulação com números construídos. À esquerda, uma população em que as crianças ganham, em média, 5 pontos. Ao centro, vinte estudos com 10 crianças cada; à direita, vinte estudos com 97 crianças cada. Cada linha é um estudo: a bola é o resultado e a barra é o intervalo de confiança a 95 %."><img src="imagens/03-vinte-estudos.png" class="img-fluid figure-img" style="width:100.0%" alt="Três painéis. À esquerda, um histograma dos ganhos numa população construída, centrado em 5 pontos e com valores de cerca de menos 30 a mais 40. Ao centro, vinte estudos com 10 crianças: as bolas variam entre cerca de menos 2 e mais 16 e as barras são compridas; uma barra, a rosa, não contém o 5. À direita, vinte estudos com 97 crianças: as bolas ficam todas perto de 5 e as barras são curtas; também aqui uma barra, a rosa, não contém o 5."></a></p>
+<figcaption>Uma simulação com números construídos. À esquerda, uma população em que as crianças ganham, em média, 5 pontos. Ao centro, vinte estudos com 10 crianças cada; à direita, vinte estudos com 97 crianças cada. Cada linha é um estudo: a bola é o resultado e a barra é o intervalo de confiança a 95 %.</figcaption>
+</figure>
+</div>
+<p>Há três coisas a ver na figura. Com 10 crianças, os resultados variam muito de estudo para estudo, e alguns ficam abaixo de zero, embora o valor verdadeiro seja 5. Com 97 crianças, os resultados ficam todos perto de 5 e as barras são muito mais curtas. E quase todas as barras passam por cima do 5: em cada painel há uma, a rosa, que não passa. Quem fez o estudo da linha rosa não sabe que o seu intervalo falhou; só nós sabemos, porque fomos nós a construir a população.</p>
+<p>O tamanho de um intervalo depende de duas coisas. Depende do número de participantes: com mais pessoas, o resultado varia menos de estudo para estudo e o intervalo fica mais pequeno. Com a moeda é igual: em 10 lançamentos é fácil sair 70 % de caras; em 1000 lançamentos isso praticamente nunca acontece. E depende de quanto as pessoas variam entre si naquela medida: quanto mais diferentes forem umas das outras, maior fica o intervalo.</p>
+<div class="def">
+<p>O intervalo de confiança a 95 % é o conjunto dos valores do efeito verdadeiro que são compatíveis com os dados do estudo. “A 95 %” descreve o método usado para o calcular: em 100 estudos feitos da mesma maneira, cerca de 95 intervalos contêm o valor verdadeiro e 5 não. Na simulação eram 19 em 20.</p>
+</div>
+<p>É frequente ler-se “há 95 % de probabilidade de o valor verdadeiro estar entre 0,15 e 10,4”. Em rigor, os 95 % descrevem o que acontece em muitos estudos; um intervalo em particular ou contém o valor verdadeiro ou não contém <span class="citation" data-cites="greenland2016">(<a href="referencias.html#ref-greenland2016" role="doc-biblioref">Greenland et al., 2016</a>)</span>. Para ler artigos chega a leitura “valores compatíveis com os dados”.</p>
+<p>Com isto, os três intervalos da frase do artigo leem-se assim:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 17%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Resultado</th>
+<th>Intervalo a 95 %</th>
+<th>Como se lê</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Turnos correspondidos dos pais: 40 pontos percentuais</td>
+<td>34 a 46</td>
+<td>O efeito verdadeiro pode estar entre 34 e 46 pontos percentuais. Todos estes valores são grandes e estão longe de zero.</td>
+</tr>
+<tr class="even">
+<td>Linguagem recetiva: 5,3 pontos</td>
+<td>0,15 a 10,4</td>
+<td>O efeito verdadeiro pode ser quase nulo (0,15 pontos) ou chegar a 10 pontos. É favorável à intervenção, e o tamanho é incerto.</td>
+</tr>
+<tr class="odd">
+<td>Linguagem expressiva: 0,37 pontos</td>
+<td>−4,5 a 5,3</td>
+<td>O efeito verdadeiro pode ser uma perda de 4,5 pontos, pode ser zero e pode ser um ganho de 5,3 pontos.</td>
+</tr>
+</tbody>
+</table>
+<p>O intervalo é sempre à volta da diferença entre os grupos. Não é um intervalo de idades, nem diz entre que valores ficou cada criança. Quando o zero está dentro do intervalo, como na terceira linha, os dados são compatíveis com não haver efeito nenhum.</p>
+<div class="quiz" data-certa="3">
+<p class="enunciado">
+Q3.2 Um estudo dá uma diferença de 4 pontos entre os grupos, com intervalo de confiança a 95 % de −1 a 9. Qual é a leitura certa?
+</p>
+<label><input type="radio" name="q32" value="1"> a intervenção não tem efeito, porque o zero está dentro do intervalo</label> <label><input type="radio" name="q32" value="2"> 95 % das crianças ganharam entre −1 e 9 pontos</label> <label><input type="radio" name="q32" value="3"> o efeito verdadeiro pode ser uma pequena perda, pode ser zero e pode ser um ganho de até 9 pontos; o estudo não permite escolher</label> <button type="button">Verificar</button> <span class="resultado"></span>
+<p class="explicacao">
+O intervalo diz respeito à diferença entre as médias dos dois grupos, não a cada criança. Ter o zero lá dentro quer dizer que “nenhum efeito” é um dos valores compatíveis com os dados; um ganho de 9 pontos também é.
+</p>
+</div>
+</section>
+<section id="da-moeda-ao-estudo-o-valor-p" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="da-moeda-ao-estudo-o-valor-p"><span class="header-section-number">3.3</span> Da moeda ao estudo: o valor p</h2>
+<p>O raciocínio da moeda aplica-se, passo a passo, a um estudo de intervenção. O exemplo de estudo é construído: 60 crianças, 30 num grupo de intervenção e 30 em lista de espera.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 35%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Na experiência da moeda</th>
+<th>Num estudo de intervenção</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>O que se supõe</td>
+<td>A moeda é normal</td>
+<td>A intervenção não faz nada</td>
+</tr>
+<tr class="even">
+<td>O que se observou</td>
+<td>9 caras em 10</td>
+<td>O grupo de intervenção ficou 5,6 pontos acima do outro</td>
+</tr>
+<tr class="odd">
+<td>A pergunta</td>
+<td>Quantas vezes uma moeda normal dá 9 ou mais caras?</td>
+<td>Se a intervenção não fizesse nada, quantas vezes apareceria uma diferença de 5,6 pontos ou mais?</td>
+</tr>
+<tr class="even">
+<td>A resposta</td>
+<td>Em 1 de cada 100 vezes</td>
+<td>É o valor p</td>
+</tr>
+</tbody>
+</table>
+<p>À suposição “a intervenção não faz nada” os artigos chamam hipótese nula. A conta do valor p é sempre feita a supor que a hipótese nula é verdadeira <span class="citation" data-cites="ferreira2015p">(<a href="referencias.html#ref-ferreira2015p" role="doc-biblioref">Ferreira &amp; Patino, 2015</a>)</span>.</p>
+<section id="porque-há-diferenças-entre-grupos-mesmo-sem-intervenção" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="porque-há-diferenças-entre-grupos-mesmo-sem-intervenção"><span class="header-section-number">3.3.1</span> Porque há diferenças entre grupos mesmo sem intervenção</h3>
+<p>As crianças são diferentes umas das outras. Em três meses, umas evoluem muito, outras pouco, e algumas pioram. Se 60 crianças forem divididas ao acaso em dois grupos de 30 e ninguém fizer nada a nenhum dos grupos, as médias dos dois grupos não ficam exatamente iguais: a um dos grupos calham, por acaso, mais crianças das que evoluem depressa. Com as moedas passou-se o mesmo: a uma pessoa saíram 7 caras e a outra 4, sem que nenhuma moeda fosse diferente.</p>
+<p>Por isso, quando um estudo encontra uma diferença entre os grupos, a primeira pergunta a fazer é se essa diferença é maior do que as que o acaso produz sozinho.</p>
+<p>Para responder, pode fazer-se com as crianças o que se fez com a moeda. No exemplo construído, o grupo de intervenção ganhou em média mais 5,6 pontos do que a lista de espera. Pegou-se nos ganhos das 60 crianças e ignorou-se quem recebeu a intervenção. Dividiram-se as 60 ao acaso em dois grupos de 30 e calculou-se a diferença entre as médias. Repetiu-se isto 20 000 vezes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="imagens/03-ao-acaso.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Dados construídos. As 60 crianças foram divididas ao acaso em dois grupos, 20 000 vezes, e de cada vez calculou-se a diferença entre as médias. A linha preta marca a diferença que se observou de facto, 5,6 pontos."><img src="imagens/03-ao-acaso.png" class="img-fluid figure-img" style="width:100.0%" alt="Histograma das diferenças entre as médias de dois grupos formados ao acaso, centrado em zero e com quase todos os valores entre menos 8 e mais 8 pontos. Uma linha preta vertical marca a diferença observada, 5,6 pontos. As barras a amarelo, para lá de 5,6 e para lá de menos 5,6, são 4,3 por cento das 20 000 divisões."></a></p>
+<figcaption>Dados construídos. As 60 crianças foram divididas ao acaso em dois grupos, 20 000 vezes, e de cada vez calculou-se a diferença entre as médias. A linha preta marca a diferença que se observou de facto, 5,6 pontos.</figcaption>
+</figure>
+</div>
+<p>Quase todas as divisões ao acaso dão diferenças perto de zero, tal como quase todas as séries de 10 lançamentos dão perto de 5 caras. A amarelo estão as vezes em que o acaso sozinho deu uma diferença de 5,6 pontos ou mais, para qualquer dos lados: 4,3 % das vezes, cerca de 4 em cada 100. Com a moeda contámos só o lado das caras; nos estudos conta-se para os dois lados, porque o grupo de intervenção tanto pode ficar acima como abaixo do outro. Este número é o valor p do estudo construído: ,04. Um programa de estatística chega a ,040 por uma fórmula, sem precisar de dividir as crianças 20 000 vezes.</p>
+<div class="def">
+<p>O valor p responde a esta pergunta: se a intervenção não fizesse nada, com que frequência apareceria uma diferença pelo menos tão grande como a que o estudo encontrou? Um p pequeno diz que o resultado é difícil de explicar só pelo acaso. Um p grande diz que o acaso chega para o explicar.</p>
+</div>
+</section>
+<section id="como-se-lê-um-valor-p" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="como-se-lê-um-valor-p"><span class="header-section-number">3.3.2</span> Como se lê um valor p</h3>
+<p>O valor p escreve-se como uma proporção. p = ,04 são 4 em cada 100 vezes; p = ,01 é 1 em cada 100; p = ,88 são 88 em cada 100. “p &lt; ,01” quer dizer menos de 1 em cada 100. Nos artigos em inglês aparece com ponto (p = .04 ou p = 0.04), e muitos artigos e programas escrevem o zero antes da vírgula (0,04); é o mesmo número. Neste capítulo, quando se cita um artigo ou um programa, o valor fica como lá está.</p>
+<p>Com a moeda, e contando só o lado das caras: 9 ou mais caras em 10 têm p = ,01; 7 ou mais caras têm p = ,17.</p>
+<p>A frase do artigo tem dois valores p, e a Tabela 3 do artigo dá o terceiro, que o resumo substituiu pela palavra “significativamente”:</p>
+<p>Turnos correspondidos, p &lt; ,01. Se a intervenção não mudasse o comportamento dos pais, uma diferença de 40 pontos percentuais ou mais apareceria em menos de 1 em cada 100 estudos como este. É difícil de explicar só pelo acaso.</p>
+<p>Linguagem recetiva, p = ,04. Se a intervenção não fizesse nada, uma diferença de 5,3 pontos ou mais apareceria em 4 de cada 100 estudos.</p>
+<p>Linguagem expressiva, p = ,88. Se a intervenção não fizesse nada, uma diferença de 0,37 pontos ou mais apareceria em 88 de cada 100 estudos. É o tipo de diferença que o acaso produz quase sempre, como as 5 caras em 10.</p>
+<p>Os valores p e os intervalos concordam: o p mais pequeno é o do intervalo mais afastado do zero, e o p maior é o do intervalo que tem o zero lá dentro.</p>
+<div class="quiz" data-certa="2">
+<p class="enunciado">
+Q3.3 Um estudo compara dois grupos e dá p = ,03. O que quer isto dizer?
+</p>
+<label><input type="radio" name="q33" value="1"> há 3 % de probabilidade de a intervenção não funcionar</label> <label><input type="radio" name="q33" value="2"> se a intervenção não fizesse nada, uma diferença pelo menos tão grande como a encontrada apareceria em 3 de cada 100 estudos como este</label> <label><input type="radio" name="q33" value="3"> a intervenção melhorou os resultados em 3 %</label> <button type="button">Verificar</button> <span class="resultado"></span>
+<p class="explicacao">
+O p é calculado a supor que a intervenção não faz nada, e por isso não pode ser a probabilidade de ela funcionar ou não. Também não mede o tamanho da melhoria; esse lê-se na diferença entre os grupos.
+</p>
+</div>
+</section>
+<section id="o-que-o-valor-p-não-diz" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="o-que-o-valor-p-não-diz"><span class="header-section-number">3.3.3</span> O que o valor p não diz</h3>
+<p>Há três leituras do valor p que aparecem muitas vezes e que estão erradas <span class="citation" data-cites="greenland2016">(<a href="referencias.html#ref-greenland2016" role="doc-biblioref">Greenland et al., 2016</a>)</span>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 62%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Costuma dizer-se</th>
+<th>O que o valor p diz de facto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“p = ,01: há 99 % de certeza de que a intervenção funciona”</td>
+<td>O p é calculado a supor que a intervenção não faz nada. Diz que um resultado assim seria raro nesse caso; não dá a probabilidade de a intervenção funcionar.</td>
+</tr>
+<tr class="even">
+<td>“p muito pequeno: o efeito é muito grande”</td>
+<td>O p não mede o tamanho do efeito. Um efeito pequeno, num estudo com muita gente, dá um p muito pequeno.</td>
+</tr>
+<tr class="odd">
+<td>“p grande: a intervenção não funciona”</td>
+<td>Um p grande só diz que o acaso chega para explicar o resultado. Um estudo com poucas pessoas pode não detetar um efeito que existe.</td>
+</tr>
+</tbody>
+</table>
+<p>A primeira vê-se bem com a moeda. Nove caras em 10 não dizem que há 99 % de probabilidade de a moeda estar viciada: se a moeda saiu do teu bolso, continuas a achar que é normal e que tiveste sorte. <span class="citation" data-cites="ferreira2015p">Ferreira &amp; Patino (<a href="referencias.html#ref-ferreira2015p" role="doc-biblioref">2015</a>)</span> dão um exemplo com um medicamento, em que a diferença entre dois grupos tem p = ,03, e escrevem: “Isso não significa que a droga seja um diurético, nem que haja uma chance de 97% de a droga ser diurética.” A segunda e a terceira leituras são o assunto das secções seguintes.</p>
+</section>
+</section>
+<section id="estatisticamente-significativo-é-uma-convenção" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="estatisticamente-significativo-é-uma-convenção"><span class="header-section-number">3.4</span> “Estatisticamente significativo” é uma convenção</h2>
+<p>“Estatisticamente significativo” quer dizer que o valor p ficou abaixo de um limite escolhido antes do estudo. Por tradição, esse limite é ,05, isto é, 5 em cada 100 <span class="citation" data-cites="ferreira2015p">(<a href="referencias.html#ref-ferreira2015p" role="doc-biblioref">Ferreira &amp; Patino, 2015</a>)</span>. Com p abaixo de ,05 os investigadores escrevem “diferença significativa”; com p acima, “diferença não significativa”.</p>
+<p>Com a moeda: 8 ou mais caras em 10 saem em 5,5 de cada 100 vezes, um pouco acima do limite, e 9 ou mais saem em 1 de cada 100. Pela convenção, com 8 caras ainda não se desconfia da moeda, e com 9 já se desconfia.</p>
+<p>Na frase do artigo, “significativamente melhores” quer dizer só isto: na linguagem recetiva, o p ficou abaixo de ,05 (foi ,04). A palavra descreve o resultado de um teste. Não descreve o tamanho nem a importância da diferença.</p>
+<p>O limite de ,05 não separa dois tipos de resultados. No exemplo construído das 60 crianças, a diferença entre os grupos é de 5,6 pontos, com p = ,040. Se retirarmos duas crianças do ficheiro, uma de cada grupo, a diferença passa a 5,3 pontos, com p = ,058.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="imagens/03-sessenta-e-cinquenta-e-oito.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="A mesma comparação com 60 crianças e com 58 (dados construídos). Os dois intervalos são quase iguais; só muda o lado do ,05 em que o valor p ficou."><img src="imagens/03-sessenta-e-cinquenta-e-oito.png" class="img-fluid figure-img" style="width:100.0%" alt="Dois intervalos de confiança, um por cima do outro. Com 60 crianças: diferença de 5,6 pontos, intervalo de 0,3 a 10,9, p igual a 0,040, significativo. Com 58 crianças: diferença de 5,3 pontos, intervalo de menos 0,2 a 10,7, p igual a 0,058, não significativo. Uma linha rosa vertical marca o zero."></a></p>
+<figcaption>A mesma comparação com 60 crianças e com 58 (dados construídos). Os dois intervalos são quase iguais; só muda o lado do ,05 em que o valor p ficou.</figcaption>
+</figure>
+</div>
+<p>O primeiro resultado é “significativo” e o segundo “não significativo”, e os dois dizem quase o mesmo: a diferença estimada é de cerca de 5 pontos, e o efeito verdadeiro pode estar entre quase zero e cerca de 11. As duas crianças retiradas não eram casos extremos. Por isso se lê sempre a diferença e o intervalo, e não só a palavra.</p>
+<div class="quiz" data-certa="1">
+<p class="enunciado">
+Q3.4 Dois estudos avaliam a mesma intervenção. Estudo A: diferença de 5,6 pontos (intervalo de 0,3 a 10,9), p = ,040. Estudo B: diferença de 5,3 pontos (intervalo de −0,2 a 10,7), p = ,058. Qual é a leitura mais sensata?
+</p>
+<label><input type="radio" name="q34" value="1"> os dois estudos encontraram quase o mesmo: uma diferença de cerca de 5 pontos, com um efeito verdadeiro que pode ir de quase zero a cerca de 11</label> <label><input type="radio" name="q34" value="2"> o estudo A mostra que a intervenção funciona e o estudo B mostra que não funciona</label> <label><input type="radio" name="q34" value="3"> o estudo B está errado, porque contradiz o estudo A</label> <button type="button">Verificar</button> <span class="resultado"></span>
+<p class="explicacao">
+Os dois resultados só diferem no lado do ,05 em que o p ficou. As diferenças e os intervalos são quase iguais, e é por eles que se compara.
+</p>
+</div>
+<section id="significativo-não-quer-dizer-importante" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="significativo-não-quer-dizer-importante"><span class="header-section-number">3.4.1</span> Significativo não quer dizer importante</h3>
+<p>Num estudo com mais de 22 000 pessoas seguidas durante cinco anos, em média, a aspirina reduziu os enfartes do miocárdio com p &lt; ,00001. A diferença de risco foi de 0,77 %: menos de um enfarte evitado por cada 100 pessoas tratadas <span class="citation" data-cites="sullivan2012">(<a href="referencias.html#ref-sullivan2012" role="doc-biblioref">Sullivan &amp; Feinn, 2012</a>)</span>.</p>
+<p>O p foi muito pequeno porque o estudo era muito grande, e o efeito era muito pequeno. Com a moeda, seria uma moeda que dá cara 51 % das vezes: em 10 lançamentos ninguém dá por isso; em 100 000 lançamentos o p é minúsculo, e a moeda continua a ser quase normal.</p>
+<p>O valor p diz se o acaso chega para explicar o resultado. Para saber se o resultado é grande ou pequeno, olha-se para a diferença e para o seu intervalo.</p>
+</section>
+</section>
+<section id="o-tamanho-do-efeito" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="o-tamanho-do-efeito"><span class="header-section-number">3.5</span> O tamanho do efeito</h2>
+<p>No capítulo 1 ficou uma pergunta por responder: 5,3 é muito? O tamanho de um efeito pode dizer-se de duas maneiras.</p>
+<p>A primeira é na unidade em que foi medido: a diferença entre os grupos, tal como está no artigo. Por exemplo, 5,3 pontos da PLS-4. Para saber se é muito, é preciso conhecer a escala.</p>
+<p>A segunda é em desvios-padrão: divide-se a diferença pelo desvio-padrão e fica-se a saber a quantos desvios-padrão ela corresponde. A este número chama-se d de Cohen. A Tabela 3 do artigo dá d = 0,27 para a linguagem recetiva, 0,03 para a expressiva e 2,86 para os turnos correspondidos. Um d de 0,27 quer dizer que a diferença entre os grupos é pouco mais de um quarto do desvio-padrão das crianças do estudo.</p>
+<p>O d serve para comparar resultados medidos em escalas diferentes. Como referência geral, 0,2 costuma considerar-se pequeno, 0,5 médio e 0,8 grande <span class="citation" data-cites="sullivan2012">(<a href="referencias.html#ref-sullivan2012" role="doc-biblioref">Sullivan &amp; Feinn, 2012</a>)</span>. Estes valores são convenções e não devem ser lidos de forma rígida <span class="citation" data-cites="lakens2013">(<a href="referencias.html#ref-lakens2013" role="doc-biblioref">Lakens, 2013</a>)</span>: o que conta é o que a diferença representa na vida da pessoa.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="imagens/03-tamanho-do-efeito.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="O que um d de 0,27 e um d de 2,86 parecem. As curvas são desenhos feitos a partir dos tamanhos de efeito do artigo; não são os dados das crianças."><img src="imagens/03-tamanho-do-efeito.png" class="img-fluid figure-img" style="width:100.0%" alt="Dois painéis, cada um com duas curvas em forma de sino, uma para o grupo de controlo e outra para o grupo de intervenção. No primeiro, linguagem recetiva, d igual a 0,27: as duas curvas sobrepõem-se quase por inteiro. No segundo, turnos correspondidos dos cuidadores, d igual a 2,86: as duas curvas quase não se tocam."></a></p>
+<figcaption>O que um d de 0,27 e um d de 2,86 parecem. As curvas são desenhos feitos a partir dos tamanhos de efeito do artigo; não são os dados das crianças.</figcaption>
+</figure>
+</div>
+<p>Com d = 0,27, os dois grupos sobrepõem-se quase por inteiro: muitas crianças do grupo de controlo têm pontuações acima da média do grupo de intervenção, e ao contrário. Com d = 2,86, quase todos os pais do grupo de intervenção usam mais turnos correspondidos do que quase todos os pais do grupo de controlo.</p>
+<p>Já se pode responder à pergunta. Na PLS-4, as crianças em geral têm um desvio-padrão de 15 pontos, e 5,3 pontos são cerca de um terço disso. O d do artigo é um pouco menor (0,27) porque é calculado com o desvio-padrão das crianças do estudo, que pelas contas (5,3 ÷ 0,27) é de cerca de 20 pontos. As autoras chamam-lhe um benefício pequeno para a linguagem recetiva. O intervalo vai de 0,15 a 10,4: o efeito verdadeiro pode ser quase nulo ou chegar a dois terços de um desvio-padrão. A medida foi feita logo no fim dos três meses, e quem avaliou as crianças sabia a que grupo cada uma pertencia. A resposta é que se trata de um efeito provavelmente pequeno, favorável à intervenção, com bastante incerteza sobre o tamanho.</p>
+<section id="quantas-crianças-é-preciso-tratar-para-uma-melhorar" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="quantas-crianças-é-preciso-tratar-para-uma-melhorar"><span class="header-section-number">3.5.1</span> Quantas crianças é preciso tratar para uma melhorar</h3>
+<p>Há uma terceira maneira de dizer o tamanho de um efeito, quando o resultado é de sim ou não. No estudo, no fim dos três meses tinham atraso (uma pontuação total da PLS-4 abaixo de 85) 71 % das crianças do grupo de controlo e 51 % das do grupo de intervenção.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="imagens/03-numero-necessario-tratar.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Em cada 100 crianças, quantas tinham atraso no fim dos três meses, com os cuidados habituais e com a intervenção."><img src="imagens/03-numero-necessario-tratar.png" class="img-fluid figure-img" style="width:100.0%" alt="Dois quadros de 100 círculos. Nos cuidados habituais, 71 círculos a cinzento, com atraso no fim. Na intervenção, 51 a cinzento e 20 a amarelo: as 20 crianças em cada 100 que deixam de ter atraso com a intervenção, uma em cada cinco."></a></p>
+<figcaption>Em cada 100 crianças, quantas tinham atraso no fim dos três meses, com os cuidados habituais e com a intervenção.</figcaption>
+</figure>
+</div>
+<p>Sem a intervenção, 71 em cada 100 crianças tinham atraso no fim. Com a intervenção, 51 em cada 100. A diferença é de 20 em cada 100: em cada 100 crianças tratadas, 20 deixam de ter atraso por causa da intervenção. A esta diferença chama-se redução absoluta do risco.</p>
+<p>Vinte em 100 é o mesmo que 1 em 5. É preciso tratar cinco crianças para que uma deixe de ter um atraso que de outro modo teria. A este número chama-se número necessário tratar, e calcula-se dividindo 100 pela redução absoluta do risco em percentagem: 100 ÷ 20 = 5 <span class="citation" data-cites="cook1995">(<a href="referencias.html#ref-cook1995" role="doc-biblioref">Cook &amp; Sackett, 1995</a>)</span>.</p>
+<p>O número necessário tratar diz-se sempre com aquilo com que se comparou e ao fim de quanto tempo: cinco crianças, em comparação com os cuidados habituais, ao fim de três meses. E tem a sua própria incerteza: a diferença entre 71 % e 51 % tem p = ,05, e o artigo não dá o intervalo de confiança do 5.</p>
+<div class="quiz" data-certa="2">
+<p class="enunciado">
+Q3.5 Num ensaio, no fim da intervenção ainda tinham o problema 40 % das pessoas do grupo de controlo e 30 % das do grupo de intervenção. Qual é o número necessário tratar?
+</p>
+<label><input type="radio" name="q35" value="1"> 3</label> <label><input type="radio" name="q35" value="2"> 10</label> <label><input type="radio" name="q35" value="3"> 30</label> <button type="button">Verificar</button> <span class="resultado"></span>
+<p class="explicacao">
+A redução absoluta do risco é de 40 − 30 = 10 em cada 100. Dez em 100 é 1 em 10: é preciso tratar dez pessoas para que uma deixe de ter o problema por causa da intervenção (100 ÷ 10 = 10).
+</p>
+</div>
+</section>
+</section>
+<section id="quando-o-resultado-não-é-significativo" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="quando-o-resultado-não-é-significativo"><span class="header-section-number">3.6</span> Quando o resultado não é significativo</h2>
+<p>A frase do artigo diz que as crianças do grupo de intervenção não tiveram melhor linguagem expressiva (0,37; −4,5 a 5,3; p = ,88). Daqui não se pode concluir que a intervenção não serve para a linguagem expressiva.</p>
+<p>“O estudo não encontrou evidência de efeito” e “o estudo mostrou que não há efeito” são afirmações diferentes, e um p acima de ,05 só permite a primeira. Com a moeda: 6 caras em 10 não provam que a moeda é normal. Uma moeda que desse cara 60 % das vezes também daria 6 caras com muita frequência, e 10 lançamentos não chegam para distinguir as duas.</p>
+<p><span class="citation" data-cites="altman1995">Altman &amp; Bland (<a href="referencias.html#ref-altman1995" role="doc-biblioref">1995</a>)</span> escrevem que chamar “negativo” a um ensaio sem diferença significativa sugere, erradamente, que o estudo mostrou que não há diferença, quando em geral só mostrou “an absence of evidence of a difference”.</p>
+<p>Para saber o que um estudo permite dizer, olha-se para o intervalo de confiança. Se dentro dele estão o zero e também diferenças que seriam importantes na prática, o estudo não permite concluir. Se está o zero e não estão diferenças importantes, o estudo mostra que um efeito importante é pouco provável.</p>
+<p>No artigo, o intervalo da linguagem expressiva vai de −4,5 a 5,3 pontos. O estudo foi planeado para conseguir detetar uma diferença de 0,43 desvios-padrão, que são cerca de 6,5 pontos da escala (a conversão é nossa), e o intervalo fica todo abaixo desse valor. Noutra medida de linguagem expressiva, o número de palavras diferentes que a criança diz em 20 minutos, a diferença foi de 11,4 palavras (intervalo de 2,5 a 20,4; p = ,01).</p>
+<p>O que se pode dizer é isto: aos três meses, o estudo não encontrou efeito no teste de linguagem expressiva, e um efeito grande nesse teste é pouco provável; no número de palavras que a criança usa, encontrou efeito. As autoras lembram que, em três meses, é de esperar mudança primeiro nas medidas mais próximas do que foi ensinado e só depois nos testes padronizados.</p>
+<p>Um resultado não significativo escreve-se com a diferença, o intervalo e o p: “não encontrámos evidência de diferença na linguagem expressiva (0,37 pontos; intervalo de confiança a 95 % de −4,5 a 5,3; p = ,88)”. Não se escreve “não há diferença”, “a intervenção não funciona” nem “os grupos são iguais”.</p>
+<div class="quiz" data-certa="3">
+<p class="enunciado">
+Q3.6 Um estudo com 20 pessoas compara dois grupos. A diferença é de 6 pontos, com intervalo de confiança a 95 % de −4 a 16 e p = ,22. O que se pode concluir?
+</p>
+<label><input type="radio" name="q36" value="1"> a intervenção não funciona</label> <label><input type="radio" name="q36" value="2"> a intervenção funciona, mas pouco</label> <label><input type="radio" name="q36" value="3"> o estudo não permite concluir: o intervalo inclui o zero e inclui também ganhos de 16 pontos, que seriam importantes</label> <button type="button">Verificar</button> <span class="resultado"></span>
+<p class="explicacao">
+Com 20 pessoas o intervalo é muito grande. Os dados são compatíveis com nenhum efeito e com um efeito grande. O estudo não chega para responder à pergunta.
+</p>
+</div>
+</section>
+<section id="os-testes-que-aparecem-nos-artigos" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="os-testes-que-aparecem-nos-artigos"><span class="header-section-number">3.7</span> Os testes que aparecem nos artigos</h2>
+<p>Nos artigos, o valor p vem acompanhado do nome de um teste e de uma letra: t, F, χ², r. O teste escolhe-se conforme o tipo de pergunta e o tipo de medida. A tabela serve para consultar quando leres um artigo; não é para decorar.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 32%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>A pergunta é sobre…</th>
+<th>Teste</th>
+<th>Como aparece num artigo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dois grupos diferentes, uma medida contínua (uma quantidade: pontos, meses, palavras)</td>
+<td>Teste t para amostras independentes</td>
+<td>t(58) = 2,10; p = ,040</td>
+</tr>
+<tr class="even">
+<td>As mesmas pessoas medidas duas vezes</td>
+<td>Teste t para amostras emparelhadas</td>
+<td>t(59) = 4,09; p &lt; ,001</td>
+</tr>
+<tr class="odd">
+<td>Mais de dois grupos, ou grupos medidos em mais de um momento</td>
+<td>Análise de variância (ANOVA)</td>
+<td>F(1; 32) = 32,8; p &lt; ,001</td>
+</tr>
+<tr class="even">
+<td>Duas medidas contínuas nas mesmas pessoas</td>
+<td>Correlação de Pearson</td>
+<td>r = ,42; p &lt; ,001</td>
+</tr>
+<tr class="odd">
+<td>Duas variáveis de categorias (sim ou não, grupo A ou grupo B)</td>
+<td>Qui-quadrado</td>
+<td>χ²(1) = 2,50; p = ,11</td>
+</tr>
+</tbody>
+</table>
+<p>Os exemplos da última coluna são do ficheiro construído das 60 crianças, exceto o da ANOVA, que é de <span class="citation" data-cites="pereira2025">Pereira et al. (<a href="referencias.html#ref-pereira2025" role="doc-biblioref">2025, p. 733</a>)</span>. O número entre parênteses chama-se graus de liberdade e depende do número de participantes ou, no qui-quadrado e no primeiro número do F, do número de grupos ou de categorias; não é preciso saber calculá-lo, só reconhecê-lo.</p>
+<p>Todos estes testes fazem a mesma pergunta que fizemos com a moeda: se não houvesse diferença ou relação nenhuma, com que frequência apareceriam dados como estes? A resposta é sempre um valor p, e lê-se sempre da mesma maneira.</p>
+<p>A Tabela 1 do artigo do <a href="./02-descrever-e-desconfiar.html">capítulo 2</a> tem uma coluna de resultados estatísticos que na altura não lemos <span class="citation" data-cites="pereira2025">(<a href="referencias.html#ref-pereira2025" role="doc-biblioref">Pereira et al., 2025, p. 732</a>)</span>. Na linha do sexo está um qui-quadrado, χ²(1) = 0,9; p = 0,471, porque o sexo e o grupo são duas variáveis de categorias. Na linha da idade está um teste t, t(34) = −0,1; p = 0,954, porque se compara a média de uma medida contínua entre dois grupos diferentes. O p de 0,954 lê-se assim: se os dois grupos viessem da mesma população, uma diferença de idade de 0,3 meses ou maior apareceria em 95 de cada 100 vezes. É o que se espera ver por acaso.</p>
+<p>Os autores escrevem que não havia diferenças estatisticamente significativas entre os grupos no início. Pelo que vimos na secção anterior, isso não chega para dizer que os grupos eram parecidos, sobretudo com 14 e 22 crianças. O que o mostra é o tamanho das diferenças: 0,3 meses de idade, com desvios-padrão de 8 a 9 meses, e 2,1 pontos no teste de linguagem, com desvios-padrão de 22 a 28.</p>
+<section id="para-fazer-no-jamovi" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="para-fazer-no-jamovi"><span class="header-section-number">3.7.1</span> Para fazer no Jamovi</h3>
+<p>O Jamovi é um programa de estatística gratuito (<a href="https://www.jamovi.org">jamovi.org</a>). Os dois ficheiros do exemplo construído estão aqui: <a href="dados/criancas_s3.csv">60 crianças</a> e <a href="dados/criancas_s3_58.csv">as mesmas sem duas</a>. Não há crianças reais nestes ficheiros. Cada linha é uma criança, com o grupo (intervenção ou lista de espera), a pontuação de linguagem recetiva antes e depois, o ganho, e se ainda tinha atraso no fim. Há mais duas colunas, os minutos de leitura partilhada por dia e o número de palavras diferentes que a criança diz em 20 minutos; a correlação da tabela (r = ,42) é entre estas duas.</p>
+<p>Abre o primeiro ficheiro (menu das três barras, Open) e faz estas três análises. Os resultados que deves obter estão por baixo de cada uma. O Jamovi escreve os decimais com ponto (8.37); aqui estão com vírgula.</p>
+<ol type="1">
+<li><p>Descrever o ganho em cada grupo. Analyses, Exploration, Descriptives; “ganho” em Variables e “grupo” em Split by. O grupo de intervenção tem média 8,37 e desvio-padrão 10,6; a lista de espera tem média 2,80 e desvio-padrão 9,98. Nos dois grupos há crianças que perderam pontos e crianças que ganharam muitos.</p></li>
+<li><p>Comparar os dois grupos. Analyses, T-Tests, Independent Samples T-Test; “ganho” em Dependent Variables e “grupo” em Grouping Variable; em Additional Statistics, marca Mean difference, Confidence interval e Effect size. Deves ver t = 2,10 com 58 graus de liberdade, p = 0,040, diferença de 5,57, intervalo de 0,25 a 10,9 e d de Cohen de 0,54. Com o segundo ficheiro, o p passa a 0,058.</p></li>
+<li><p>Contar quantas crianças ainda tinham atraso. Analyses, Frequencies, Independent Samples (χ² test of association); “grupo” em Rows e “atraso_fim” em Columns; em Cells, marca Row. Tinham atraso no fim 15 das 30 crianças do grupo de intervenção (50 %) e 21 das 30 da lista de espera (70 %); χ² = 2,50, p = 0,114. A redução absoluta do risco é de 20 em cada 100 e o número necessário tratar é 5.</p></li>
+</ol>
+<p>A terceira análise tem uma coisa a notar. As percentagens são quase as do artigo (51 % e 71 %), onde o p foi ,05; aqui é ,11. O tamanho do efeito é o mesmo, e o p muda porque aqui há 60 crianças e no artigo foram analisadas 88 das 97. Com a moeda acontece igual: 7 ou mais caras em 10 saem por acaso em 17 de cada 100 vezes, e 70 ou mais caras em 100 saem em menos de 1 de cada 10 000.</p>
+<p>Se quiseres continuar: com um teste t para amostras emparelhadas (Paired Samples T-Test, com “depois” e “antes”), as 60 crianças ganharam em média 5,6 pontos entre o início e o fim, com p &lt; ,001 (por coincidência, é quase o mesmo número que a diferença entre os grupos; são contas diferentes). Daqui não se conclui que a intervenção funcionou, porque nas 60 estão as 30 que não a fizeram, e essas também ganharam 2,8 pontos em média. Uma comparação entre o antes e o depois não separa o efeito da intervenção do que acontece com o tempo; a comparação que interessa é a da segunda análise, entre os dois grupos.</p>
+<div class="quiz" data-certa="3">
+<p class="enunciado">
+Q3.7 Um artigo compara a percentagem de crianças com e sem dificuldades de leitura em dois grupos, o que fez e o que não fez um programa. Que teste esperas encontrar?
+</p>
+<label><input type="radio" name="q37" value="1"> um teste t para amostras independentes</label> <label><input type="radio" name="q37" value="2"> uma correlação de Pearson</label> <label><input type="radio" name="q37" value="3"> um qui-quadrado</label> <button type="button">Verificar</button> <span class="resultado"></span>
+<p class="explicacao">
+As duas variáveis são de categorias: ter ou não ter dificuldades, e pertencer a um grupo ou ao outro. O teste t compara médias de uma medida contínua, e a correlação relaciona duas medidas contínuas.
+</p>
+</div>
+</section>
+</section>
+<section id="a-frase-do-artigo-lida-outra-vez" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="a-frase-do-artigo-lida-outra-vez"><span class="header-section-number">3.8</span> A frase do artigo, lida outra vez</h2>
+<p>Com o que está neste capítulo e nos dois anteriores, a frase do início lê-se por inteiro.</p>
+<p>No grupo de intervenção, uma parte muito maior das falas dos pais passou a ser resposta a uma fala da criança: mais 40 pontos percentuais do que no grupo de controlo. O efeito verdadeiro pode estar entre 34 e 46, e uma diferença destas apareceria em menos de 1 em cada 100 estudos se a intervenção não mudasse nada. É um efeito grande e difícil de explicar pelo acaso.</p>
+<p>As crianças do grupo de intervenção ficaram 5,3 pontos acima das outras no teste de linguagem recetiva. O efeito verdadeiro pode estar entre quase zero e 10 pontos, e o p foi ,04. É um efeito provavelmente pequeno, com o tamanho incerto.</p>
+<p>No teste de linguagem expressiva, a diferença foi de 0,37 pontos, com um intervalo de −4,5 a 5,3 e p = ,88. O estudo não encontrou evidência de efeito nesta medida aos três meses, o que é diferente de ter mostrado que a intervenção não serve para a linguagem expressiva.</p>
+</section>
+<section id="o-que-fica" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="o-que-fica"><span class="header-section-number">3.9</span> O que fica</h2>
+<p>O resultado de um estudo é uma estimativa, e o intervalo de confiança diz entre que valores o efeito verdadeiro pode estar.</p>
+<p>O valor p diz com que frequência o acaso sozinho daria uma diferença pelo menos tão grande como a do estudo, se a intervenção não fizesse nada; não diz a probabilidade de a intervenção funcionar nem o tamanho do efeito.</p>
+<p>“Significativo” quer dizer p abaixo de ,05, e “não significativo” não quer dizer que não há efeito: o tamanho e a importância leem-se na diferença, no intervalo e no número necessário tratar.</p>
+</section>
+<section id="exercícios" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="exercícios"><span class="header-section-number">3.10</span> Exercícios</h2>
+<p>As frases e os números dos exercícios 1 a 4 são de artigos publicados. As respostas abrem ao clicar.</p>
+<ol type="1">
+<li>É a frase do exercício 1 do capítulo 1, agora para ler por inteiro: “adjusted mean differences (intervention−control) were −2.4 (95% confidence interval −6.2 to 1.4; P=0.21) for expressive language” <span class="citation" data-cites="wake2011">(<a href="referencias.html#ref-wake2011" role="doc-biblioref">Wake et al., 2011</a>)</span>. O que dizem o intervalo e o p? Pode escrever-se que o programa não funciona?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Resposta">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resposta
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>O intervalo vai de −6,2 a 1,4: o efeito verdadeiro pode ser uma desvantagem de 6 pontos, pode ser zero e pode ser uma vantagem de 1,4 pontos, no máximo. O p de ,21 diz que, se o programa não fizesse nada, uma diferença deste tamanho ou maior apareceria em 21 de cada 100 estudos. Não se escreve “o programa não funciona”; escreve-se que o estudo não encontrou evidência de benefício. Neste caso o intervalo permite ir mais longe: o limite de cima é 1,4 pontos, e o ensaio tinha sido planeado para detetar 0,6 desvios-padrão, cerca de 9 pontos (a conversão é nossa). Um benefício importante deste programa, nesta população, é pouco provável. Os autores concluem: “little evidence was found that it improved language or behaviour”.</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>É a frase do exercício 2 do capítulo 1: “The estimated six months group difference was not statistically significant, with 0.25 (95% CI –0.19 to 0.69) points in favour of therapy” <span class="citation" data-cites="bowen2012">(<a href="referencias.html#ref-bowen2012" role="doc-biblioref">Bowen et al., 2012</a>)</span>. O ensaio foi planeado para conseguir detetar uma diferença de 0,5 pontos. O que permite concluir este resultado, sozinho?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Resposta">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resposta
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>O intervalo inclui o zero e inclui também os 0,5 pontos que o estudo queria detetar. Os dados são compatíveis com nenhuma diferença e com uma diferença do tamanho que os autores consideravam importante. Este resultado, sozinho, não permite concluir num sentido nem no outro. Convém também lembrar com o que se comparou: visitas regulares de uma pessoa sem formação em terapia, e não a ausência de apoio.</p>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Na Tabela 3 do artigo deste capítulo, o número de palavras diferentes que a criança diz em 20 minutos tem uma diferença ajustada entre os grupos de 11,4 (intervalo de confiança a 95 % de 2,5 a 20,4; p = ,01) <span class="citation" data-cites="roberts2015">(<a href="referencias.html#ref-roberts2015" role="doc-biblioref">Roberts &amp; Kaiser, 2015</a>)</span>. Escreve a leitura completa deste resultado, em duas ou três frases.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Resposta">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resposta
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Por exemplo: as crianças do grupo de intervenção disseram em média mais 11,4 palavras diferentes do que as do grupo de controlo, numa amostra de 20 minutos. O efeito verdadeiro pode estar entre 2,5 e 20,4 palavras. Se a intervenção não fizesse nada, uma diferença de 11,4 palavras ou mais apareceria em 1 de cada 100 estudos como este.</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>No ensaio não aleatorizado do capítulo 2, os autores comparam a mudança dos dois grupos entre o início e o fim, na escala preenchida pelos pais, e reportam F(1; 32) = 32,8, p &lt; 0,001 <span class="citation" data-cites="pereira2025">(<a href="referencias.html#ref-pereira2025" role="doc-biblioref">Pereira et al., 2025, p. 733</a>)</span>. O que diz este p? E o que é que ele não permite dizer, tendo em conta o desenho do estudo?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Resposta">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resposta
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>O p diz que, se o programa não fizesse nada, uma diferença tão grande entre a mudança de um grupo e a do outro apareceria em menos de 1 em cada 1000 estudos. O acaso explica mal este resultado. O p não diz que foi o programa a causar a diferença. As crianças não foram distribuídas ao acaso pelos grupos, e os pais, que preencheram a escala, sabiam em que grupo o filho estava; são limitações que os próprios autores apontam (p.&nbsp;736). O valor p responde à pergunta sobre o acaso e não responde à pergunta sobre o desenho do estudo.</p>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Seis caras em 10 lançamentos e 60 caras em 100 lançamentos são a mesma proporção. Com uma moeda normal, 6 ou mais caras em 10 saem em 38 de cada 100 vezes; 60 ou mais caras em 100 saem em 3 de cada 100 vezes. Em qual dos casos desconfias da moeda, e o que é que isto diz sobre estudos pequenos e estudos grandes?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Resposta">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Resposta
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Com 6 em 10 não há razão para desconfiar: acontece mais de um terço das vezes com uma moeda normal. Com 60 em 100 já há, porque é um resultado raro. A proporção é a mesma, e o valor p é muito diferente, porque muda o número de lançamentos. Num estudo passa-se o mesmo: a mesma diferença entre grupos pode ter um p grande com poucas pessoas e um p pequeno com muitas. É por isso que o p não mede o tamanho do efeito.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="para-ler-mais" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="para-ler-mais"><span class="header-section-number">3.11</span> Para ler mais</h2>
+<p><span class="citation" data-cites="ferreira2015p">Ferreira &amp; Patino (<a href="referencias.html#ref-ferreira2015p" role="doc-biblioref">2015</a>)</span> explicam o valor p numa página, em português e em inglês, com o exemplo do medicamento citado neste capítulo. <span class="citation" data-cites="patino2015ic">Patino &amp; Ferreira (<a href="referencias.html#ref-patino2015ic" role="doc-biblioref">2015</a>)</span> fazem o mesmo para o intervalo de confiança, em duas páginas. <span class="citation" data-cites="altman1995">Altman &amp; Bland (<a href="referencias.html#ref-altman1995" role="doc-biblioref">1995</a>)</span> é uma nota de uma página sobre os resultados não significativos. <span class="citation" data-cites="sullivan2012">Sullivan &amp; Feinn (<a href="referencias.html#ref-sullivan2012" role="doc-biblioref">2012</a>)</span> explicam o tamanho do efeito e contam o estudo da aspirina. <span class="citation" data-cites="cook1995">Cook &amp; Sackett (<a href="referencias.html#ref-cook1995" role="doc-biblioref">1995</a>)</span> explicam o número necessário tratar e como se calcula. <span class="citation" data-cites="greenland2016">Greenland et al. (<a href="referencias.html#ref-greenland2016" role="doc-biblioref">2016</a>)</span> é uma lista de 25 leituras erradas de valores p, intervalos de confiança e testes, cada uma com a explicação; serve para consultar quando uma frase de um artigo levantar dúvidas. A declaração da American Statistical Association sobre o valor p resume o assunto em seis princípios <span class="citation" data-cites="wasserstein2016">(<a href="referencias.html#ref-wasserstein2016" role="doc-biblioref">Wasserstein &amp; Lazar, 2016</a>)</span>.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-altman1995" class="csl-entry" role="listitem">
+Altman, D. G., &amp; Bland, J. M. (1995). Statistics notes: Absence of evidence is not evidence of absence. <em>BMJ</em>, <em>311</em>(7003), 485. <a href="https://doi.org/10.1136/bmj.311.7003.485">https://doi.org/10.1136/bmj.311.7003.485</a>
+</div>
+<div id="ref-bowen2012" class="csl-entry" role="listitem">
+Bowen, A., Hesketh, A., Patchick, E., Young, A., Davies, L., Vail, A., Long, A. F., Watkins, C., Wilkinson, M., Pearl, G., Ralph, M. A. L., &amp; Tyrrell, P. (2012). Effectiveness of enhanced communication therapy in the first four months after stroke for aphasia and dysarthria: a randomised controlled trial. <em>BMJ</em>, <em>345</em>, e4407. <a href="https://doi.org/10.1136/bmj.e4407">https://doi.org/10.1136/bmj.e4407</a>
+</div>
+<div id="ref-cook1995" class="csl-entry" role="listitem">
+Cook, R. J., &amp; Sackett, D. L. (1995). The number needed to treat: A clinically useful measure of treatment effect. <em>BMJ</em>, <em>310</em>(6977), 452–454. <a href="https://doi.org/10.1136/bmj.310.6977.452">https://doi.org/10.1136/bmj.310.6977.452</a>
+</div>
+<div id="ref-ferreira2015p" class="csl-entry" role="listitem">
+Ferreira, J. C., &amp; Patino, C. M. (2015). What does the p value really mean? <em>Jornal Brasileiro de Pneumologia</em>, <em>41</em>(5), 485–485. <a href="https://doi.org/10.1590/S1806-37132015000000215">https://doi.org/10.1590/S1806-37132015000000215</a>
+</div>
+<div id="ref-greenland2016" class="csl-entry" role="listitem">
+Greenland, S., Senn, S. J., Rothman, K. J., Carlin, J. B., Poole, C., Goodman, S. N., &amp; Altman, D. G. (2016). Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations. <em>European Journal of Epidemiology</em>, <em>31</em>(4), 337–350. <a href="https://doi.org/10.1007/s10654-016-0149-3">https://doi.org/10.1007/s10654-016-0149-3</a>
+</div>
+<div id="ref-lakens2013" class="csl-entry" role="listitem">
+Lakens, D. (2013). Calculating and reporting effect sizes to facilitate cumulative science: a practical primer for t-tests and <span>ANOVAs</span>. <em>Frontiers in Psychology</em>, <em>4</em>. <a href="https://doi.org/10.3389/fpsyg.2013.00863">https://doi.org/10.3389/fpsyg.2013.00863</a>
+</div>
+<div id="ref-patino2015ic" class="csl-entry" role="listitem">
+Patino, C. M., &amp; Ferreira, J. C. (2015). Confidence intervals: a useful statistical tool to estimate effect sizes in the real world. <em>Jornal Brasileiro de Pneumologia</em>, <em>41</em>(6), 565–566. <a href="https://doi.org/10.1590/S1806-37562015000000314">https://doi.org/10.1590/S1806-37562015000000314</a>
+</div>
+<div id="ref-pereira2025" class="csl-entry" role="listitem">
+Pereira, T., Ramalho, A. M., Sá Couto, P., &amp; Lousada, M. (2025). Exploring the effectiveness of the pragmatic intervention programme (<span>PICP</span>) with children with autism spectrum disorder and developmental language disorder: A non-randomised controlled trial. <em>Autism</em>, <em>29</em>(3), 726–739. <a href="https://doi.org/10.1177/13623613241287017">https://doi.org/10.1177/13623613241287017</a>
+</div>
+<div id="ref-roberts2015" class="csl-entry" role="listitem">
+Roberts, M. Y., &amp; Kaiser, A. P. (2015). Early intervention for toddlers with language delays: A randomized controlled trial. <em>Pediatrics</em>, <em>135</em>(4), 686–693. <a href="https://doi.org/10.1542/peds.2014-2134">https://doi.org/10.1542/peds.2014-2134</a>
+</div>
+<div id="ref-sullivan2012" class="csl-entry" role="listitem">
+Sullivan, G. M., &amp; Feinn, R. (2012). Using effect size—or why the P value is not enough. <em>Journal of Graduate Medical Education</em>, <em>4</em>(3), 279–282. <a href="https://doi.org/10.4300/JGME-D-12-00156.1">https://doi.org/10.4300/JGME-D-12-00156.1</a>
+</div>
+<div id="ref-wake2011" class="csl-entry" role="listitem">
+Wake, M., Tobin, S., Girolametto, L., Ukoumunne, O. C., Gold, L., Levickis, P., Sheehan, J., Goldfeld, S., &amp; Reilly, S. (2011). Outcomes of population based language promotion for slow to talk toddlers at ages 2 and 3 years: Let’s Learn Language cluster randomised controlled trial. <em>BMJ</em>, <em>343</em>, d4741. <a href="https://doi.org/10.1136/bmj.d4741">https://doi.org/10.1136/bmj.d4741</a>
+</div>
+<div id="ref-wasserstein2016" class="csl-entry" role="listitem">
+Wasserstein, R. L., &amp; Lazar, N. A. (2016). The <span>ASA</span> statement on p-values: Context, process, and purpose. <em>The American Statistician</em>, <em>70</em>(2), 129–133. <a href="https://doi.org/10.1080/00031305.2016.1154108">https://doi.org/10.1080/00031305.2016.1154108</a>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/joanamiguel\.pt\/pbe\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./02-descrever-e-desconfiar.html" class="pagination-link" aria-label="O que é o [21,6]{.hl} em &quot;38,9 ± 21,6&quot;?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é o <span class="hl">21,6</span> em “38,9 ± 21,6”?</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./percursos/mptf-ii-2026.html" class="pagination-link" aria-label="MPTF II, ESSAlcoitão, 2026/27">
+        <span class="nav-page-text">MPTF II, ESSAlcoitão, 2026/27</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Joana Miguel</p>
+</div>   
+    <div class="nav-footer-center">
+<p>E agora? O que fazemos com a evidência?</p>
+</div>
+    <div class="nav-footer-right">
+<p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt">CC BY-NC-SA</a></p>
+</div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>
