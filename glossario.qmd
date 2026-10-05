@@ -1,5 +1,49 @@
 # Glossário {.unnumbered}
 
-Cresce ao longo do semestre. Cada entrada tem o termo em português, o equivalente em inglês entre parênteses, porque é assim que o vais encontrar nos artigos, e a indicação do capítulo onde foi trabalhado.
+Cresce ao longo do semestre. Cada entrada tem o termo em português, o equivalente em inglês entre parênteses, porque é assim que o vais encontrar nos artigos, e a indicação do capítulo onde foi trabalhado. Os termos estão por ordem alfabética.
 
-(ainda vazio; o primeiro termo entra depois da primeira aula, na forma "**erro padrão** (standard error), capítulo 2: ...")
+**Aleatorização** (randomisation, randomization), capítulos 1 e 2: distribuição dos participantes pelos grupos ao acaso, como num sorteio, sem escolha dos investigadores nem das famílias.
+
+**Amostra** (sample), capítulo 3: as pessoas que entraram no estudo.
+
+**Correlação** (correlation), capítulos 2 e 3: medida de quanto duas medidas variam juntas nas mesmas pessoas. O coeficiente r vai de −1 a 1, e zero quer dizer que não há relação.
+
+**d de Cohen** (Cohen's d), capítulo 3: a diferença entre dois grupos dividida pelo desvio-padrão; diz a quantos desvios-padrão a diferença corresponde.
+
+**Desvio-padrão** (standard deviation, SD), capítulo 2: a distância típica de cada pessoa à média do grupo.
+
+**Especificidade** (specificity), capítulo 2: das pessoas que não têm o problema, a percentagem a quem o rastreio dá resultado negativo.
+
+**Estatisticamente significativo** (statistically significant), capítulo 3: com valor p abaixo de um limite escolhido antes do estudo, por tradição ,05. Não quer dizer grande nem importante.
+
+**Fiabilidade** (reliability), capítulo 2: consistência de um instrumento; dá o mesmo resultado quando se repete a medida, quando muda o avaliador e quando se comparam os itens entre si.
+
+**Grupo de controlo** (control group), capítulo 1: o grupo que não faz a intervenção e que mostra o que teria acontecido sem ela.
+
+**Hipótese nula** (null hypothesis), capítulo 3: a suposição de que a intervenção não faz nada, ou de que não há diferença nem relação; é a supor que ela é verdadeira que se calcula o valor p.
+
+**Intervalo de confiança** (confidence interval, CI), capítulo 3: o conjunto dos valores do efeito verdadeiro que são compatíveis com os dados do estudo.
+
+**Média** (mean), capítulo 1: a soma dos valores a dividir pelo número de pessoas.
+
+**Mediana** (median), capítulo 1: o valor da pessoa do meio quando se põem todas por ordem.
+
+**Número necessário tratar** (number needed to treat, NNT), capítulo 3: o número de pessoas que é preciso tratar para que uma tenha um benefício que de outro modo não teria.
+
+**População** (population), capítulo 3: todas as pessoas a quem o resultado do estudo se quer aplicar.
+
+**Qui-quadrado** (chi-square test), capítulo 3: teste usado quando se cruzam duas variáveis de categorias.
+
+**Redução absoluta do risco** (absolute risk reduction, ARR), capítulo 3: a diferença entre a percentagem de pessoas com o problema no grupo de controlo e no grupo de intervenção.
+
+**Sensibilidade** (sensitivity), capítulo 2: das pessoas que têm o problema, a percentagem a quem o rastreio dá resultado positivo.
+
+**Tamanho do efeito** (effect size), capítulo 3: o tamanho da diferença entre os grupos, na unidade da medida ou em desvios-padrão.
+
+**Teste t** (t test), capítulo 3: teste usado para comparar duas médias, de dois grupos diferentes (amostras independentes) ou das mesmas pessoas medidas duas vezes (amostras emparelhadas).
+
+**Validade** (validity), capítulo 2: um instrumento é válido quando mede aquilo que se diz que mede.
+
+**Valor p** (p value), capítulo 3: a frequência com que apareceria uma diferença pelo menos tão grande como a do estudo, se a intervenção não fizesse nada.
+
+**Valor preditivo positivo** (positive predictive value, PPV), capítulo 2: das pessoas com resultado positivo num rastreio, a percentagem que tem mesmo o problema.

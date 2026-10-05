@@ -9,7 +9,7 @@ Arquitetura de cada capítulo (NN-tema.qmd), pela ordem da aula:
 2. O fio (`::: {.fio}`), com três vozes, sempre nesta ordem:
    - `::: {.msg}` + `<div class="quem">O artigo</div>` + `::: {.clip}` com a frase REAL do artigo (resumo ou resultados), com as partes que interessam marcadas `[...]{.mk}` (amarelo) e `[...]{.mk .p}` (rosa), e `<span class="src">Autor (ano), Revista vol(n), secção</span>`.
    - `::: {.msg .turma}` + `<div class="quem">A turma, no quadro</div>` + as leituras em `<span class="b">...</span>`, sem nomes; as que apareceram de facto entram depois do registo pós-aula.
-   - `::: {.msg}` + `<div class="quem">O caminho</div>` + `::: {.jm}` (a nota da docente, uma ou duas por capítulo, nunca mais; começa em minúscula, como uma nota à margem) + `::: {.nums}` com `<div class="num">40<small>legenda</small></div>` para os números do artigo de que o texto fala + a prosa do caminho.
+   - `::: {.msg}` + `<div class="quem">A explicação</div>` + `::: {.jm}` (a nota da docente, uma ou duas por capítulo, nunca mais; começa em minúscula, como uma nota à margem) + `::: {.nums}` com `<div class="num">40<small>legenda</small></div>` para os números do artigo de que o texto fala + a prosa da explicação.
 3. `::: {.def}` com a definição (o rótulo "O que é de facto" é automático). Uma por conceito.
 4. `::: {.quiz data-certa="n"}` com `<p class="enunciado">Q<cap>.<n> ...</p>`, três `<label><input type="radio" name="qXY" value="k"> ...</label>`, `<button type="button">Verificar</button> <span class="resultado"></span>` e `<p class="explicacao">...</p>`. Pelo menos um por secção.
 5. Fim fixo: "## O que fica" (três frases), "## Exercícios" (frases de resultados reais, com fonte), "## Para ler mais" (@irwin2026 com páginas; artigos por @chave). Nenhuma chave entra no .bib sem verificação no Crossref (api.crossref.org/works/DOI: título, autores, ano, revista) registada em bibliografia/verificacao_AAAA-MM-DD.csv; o .bib é gerado por _scripts/gerar_bib.py a partir desse registo, não se edita à mão. A página "Para ler" (bibliografia.qmd) diz para que serve cada referência, por capítulo.
@@ -28,3 +28,7 @@ Voz: primeira pessoa do plural para caminhar; segunda do singular nas tarefas; a
 Glossário bilingue: cada termo em português com o equivalente em inglês entre parênteses e o capítulo onde foi trabalhado.
 
 O que nunca entra: notas de docente, tempos, plano B, [CONFIRMAR], nomes de estudantes, figuras ou passagens do Irwin & Donai (só citação com página), dados de pessoas reais, valores normativos, listas onde devia haver prosa.
+
+## Estilo de prosa (fixado 28-09-2026)
+
+Sem metáforas para descrever o livro ("três vozes", "o fio", "o caminho", "o artigo fala"): diz-se o que está em cada capítulo, por que ordem e o que fazer. Sem frases-slogan, sem "não é X, é Y" como fecho, sem perguntas retóricas em série. As notas JM podem ter opinião, mas com o mesmo cuidado.

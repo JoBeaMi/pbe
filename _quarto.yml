@@ -19,8 +19,8 @@ book:
   date: today
   date-format: "D MMMM YYYY"
   license: CC BY-NC-SA
-  site-url: https://joanamiguel.pt/e-agora/
-  repo-url: https://github.com/JoBeaMi/e-agora
+  site-url: https://joanamiguel.pt/pbe/
+  repo-url: https://github.com/JoBeaMi/pbe
   repo-branch: main
   reader-mode: true
   sidebar:
@@ -38,11 +38,11 @@ book:
     - index.qmd
     - como-usar.qmd
     # Parte I. Ler números (cada capítulo entra depois da aula correspondente)
-    # - part: "Ler números"
-    #   chapters:
-    #     - 01-ler-um-resultado.qmd
-    #     - 02-descrever-e-desconfiar.qmd
-    #     - 03-o-valor-p.qmd
+    - part: "Ler números"
+      chapters:
+        - 01-ler-um-resultado.qmd
+        - 02-descrever-e-desconfiar.qmd
+        - 03-o-valor-p.qmd
     # Parte II. Do problema ao protocolo
     # - part: "Do problema ao protocolo"
     #   chapters:

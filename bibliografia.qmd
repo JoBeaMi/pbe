@@ -5,7 +5,7 @@ Esta página junta tudo o que o livro cita e diz para que serve cada coisa. Est�
 A maior parte do que se pede para ler é de leitura livre: ou a revista é de acesso aberto, ou o artigo tem uma versão gratuita no site da revista ou no PubMed Central. Quando uma ligação pedir pagamento, diz-me, e resolvemos.
 
 ::: {.jm}
-uma lista de leituras é uma promessa, não um programa. O que se lê a sério neste livro são os capítulos e os artigos que trazem os exemplos; o resto está aqui para o dia em que a pergunta aparecer na clínica.
+o que se lê a sério neste livro são os capítulos e os artigos de onde vêm os exemplos; o resto desta lista está aqui para o dia em que a pergunta aparecer na clínica.
 :::
 
 ## Antes de tudo: o que é a prática baseada na evidência
@@ -18,7 +18,7 @@ Para ir mais longe: @greenhalgh2014 pergunta se o movimento se perdeu pelo camin
 
 ### Capítulo 1. Ler um resultado
 
-Para a turma, depois da aula: @sullivan2012, quatro páginas com um título que já é a lição, "porque é que o valor p não chega", e o exemplo mais simples que conheço de um resultado significativo sem importância clínica.
+Para a turma, depois da aula: @sullivan2012, quatro páginas sobre porque é que o valor p não chega, com o exemplo mais simples que conheço de um resultado significativo sem importância clínica.
 
 Para ir mais longe: @amrhein2019 é a carta na Nature assinada por mais de oitocentos cientistas a pedir que se deixe de dividir os resultados em "significativos" e "não significativos"; @nuzzo2014 conta, para leitores não estatísticos, como o valor p chegou a ser o que é.
 

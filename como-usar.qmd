@@ -1,6 +1,12 @@
 # Como usar este livro {.unnumbered}
 
-Os capítulos seguem a ordem de uma aula, e a aula tem sempre três vozes: o artigo, a turma e o caminho. O artigo fala primeiro, com a frase real que lemos; a turma responde, com o que ficou no quadro; e depois vem o caminho entre essas respostas e o conceito. A definição só aparece no fim do capítulo. O excerto abaixo mostra como se lê; é do primeiro capítulo, "Ler um resultado", e as respostas da turma são exemplos até a aula acontecer, altura em que são substituídas pelas respostas reais, sem nomes.
+Os capítulos seguem a ordem de uma aula, e a aula tem sempre três vozes: o artigo, a turma e o caminho. O artigo fala primeiro, com a frase real que lemos; a turma responde, com o que ficou no quadro; e depois vem o caminho entre essas respostas e o conceito. A estas três vozes chamamos o fio. A definição só aparece no fim do capítulo, e a ordem é de propósito: a definição aproveita-se mais depois de teres tentado responder sem ela.
+
+Lê-se assim: quando chegares à frase do artigo, pára e responde-lhe tu antes de ler o quadro. Nos quizzes, escolhe antes de carregar em "Verificar" e lê a explicação mesmo quando acertas, porque é ela que diz porque é que as outras opções estão erradas, e são essas as leituras que vais encontrar em artigos publicados.
+
+Cada capítulo corresponde a uma aula e fica visível depois dela. O percurso da tua cadeira, na parte final do livro, diz que capítulo vem depois de que aula e o que ler antes da seguinte; essas leituras são de acesso livre, com o DOI na página "Para ler", e são o que a aula seguinte vai usar. O mínimo de cada capítulo é o fio e a secção "O que fica"; os exercícios e "Para ler mais" são para quando quiseres ir mais longe, ou para quando o trabalho o pedir.
+
+O excerto abaixo mostra como se lê; é do primeiro capítulo, "Ler um resultado", e as respostas da turma são exemplos até a aula acontecer, altura em que são substituídas pelas respostas reais, sem nomes.
 
 ::: {.fio}
 ::: {.msg}
@@ -17,7 +23,7 @@ Os cuidadores melhoraram o uso de todas as estratégias de facilitação da ling
 <span class="b">40 é muito? 40 quê?</span>
 :::
 ::: {.msg}
-<div class="quem">O caminho</div>
+<div class="quem">A explicação</div>
 ::: {.jm}
 a terceira é a melhor das três, e é por ela que começo sempre. Quem pergunta "40 quê?" já está a ler o artigo; os outros dois estão a ler o p.
 :::

@@ -4,11 +4,11 @@ Fala-se muito de prática baseada na evidência, e ainda bem. A parte fácil é 
 
 Este livro é para terapeutas da fala, e para quem está a caminho de o ser, que ficam nesse "e agora". Ensina a fazer três coisas, pela ordem em que aparecem na clínica: ler um resultado e perceber o que os números permitem concluir e o que não permitem; transformar uma dúvida clínica numa pergunta que se possa responder com um protocolo que outra pessoa conseguisse seguir sem nos perguntar nada; e levar a evidência até à decisão, com o utente e com a família. As duas primeiras partes estão escritas ou a ser escritas; a terceira está prometida. O livro cresce ao ritmo das aulas em que o uso.
 
-Não é um manual de estatística; há muitos, alguns muito bons, e estão indicados no fim dos capítulos e na página [Para ler](bibliografia.qmd). O que se faz aqui é mais modesto e, a meu ver, mais útil para um clínico: não ensinar a desconfiar da investigação, mas a confiar nela com melhores razões.
+Não é um manual de estatística; há muitos, alguns muito bons, e estão indicados no fim dos capítulos e na página [Para ler](bibliografia.qmd). O que se faz aqui é mais modesto: ensinar a ler um resultado e a dizer, com razões, quanto se pode confiar nele.
 
 ## Porque é que o escrevi
 
-Sou terapeuta da fala desde 2006 e dirijo uma clínica desde 2011. Ao longo destes anos vi a mesma cena repetir-se em reuniões clínicas, em formações e em conversas de corredor: alguém cita um artigo, diz "foi significativo", e a partir daí a decisão está tomada. Ninguém pergunta quantas crianças eram, qual foi a diferença, ou se o desenho do estudo permitia dizer que uma coisa causou a outra. Não é falta de inteligência nem de boa vontade; é que estes conceitos parecem intuitivos, e a intuição está quase sempre errada da mesma maneira. Vi-o em estudantes e vi-o em colegas com trinta anos de profissão, e vi-o em mim antes de ter passado alguns anos a estudar estatística por causa do doutoramento.
+Sou terapeuta da fala desde 2006 e dirijo uma clínica desde 2011. Ao longo destes anos vi a mesma cena repetir-se em reuniões clínicas, em formações e em conversas de corredor: alguém cita um artigo, diz "foi significativo", e a partir daí a decisão está tomada. Ninguém pergunta quantas crianças eram, qual foi a diferença, ou se o desenho do estudo permitia dizer que uma coisa causou a outra. Estes conceitos parecem intuitivos, e a intuição engana-se neles de forma previsível. Vi-o em estudantes e vi-o em colegas com trinta anos de profissão, e vi-o em mim antes de ter passado alguns anos a estudar estatística por causa do doutoramento.
 
 ::: {.jm}
 a cena que me decidiu é a mesma em qualquer turma e em qualquer equipa, e eu já estive dos dois lados dela: alguém pergunta o que "p = ,02" quer dizer, e as respostas que aparecem são todas razoáveis, todas convictas e quase todas erradas da mesma maneira. O problema nunca foi de quem responde. Era da ordem por que estas coisas se ensinam: primeiro a definição, depois a fórmula, e só muito mais tarde, se alguma vez, a pergunta a que aquilo respondia.
@@ -16,21 +16,21 @@ a cena que me decidiu é a mesma em qualquer turma e em qualquer equipa, e eu j�
 
 ## Como este livro ensina
 
-Cada capítulo começa por uma frase real de um artigo publicado e por uma pergunta: o que é que isto quer dizer? Antes de qualquer definição, aparecem as respostas que uma turma deu a essa pergunta, tal como ficaram no quadro, sem nomes. Depois vem o caminho entre essas respostas e o que o conceito é de facto, e só no fim a definição. A ordem é de propósito: uma definição lida antes de se ter tentado responder não fica; uma definição que corrige a nossa própria resposta, fica.
+Cada capítulo começa por uma frase real de um artigo publicado e por uma pergunta: o que é que isto quer dizer? Antes de qualquer definição, aparecem as respostas que uma turma deu a essa pergunta, tal como ficaram no quadro, sem nomes. Depois vem a explicação, passo a passo, e só no fim a definição, que corrige a resposta que cada um já deu. A página "Como usar este livro" diz o resto.
 
-As respostas da turma são reais e vão sendo acrescentadas à medida que dou aulas com este livro. Se te reconheceres numa delas, é bom sinal: quer dizer que a pergunta era a certa.
+As respostas da turma são reais e vão sendo acrescentadas à medida que dou aulas com este livro. As que aparecem são as mais comuns, e é normal reconheceres-te numa delas.
 
 ## Para quem é, e o que é preciso
 
 Para quem nunca teve estatística, ou teve e não ficou nada. Não é preciso saber fórmulas nem programar. É preciso ler um artigo até ao fim, ter uma calculadora à mão de vez em quando e instalar um programa gratuito, o Jamovi, quando um capítulo o pedir.
 
-O livro nasceu na terapia da fala e os exemplos vêm de estudos sobre linguagem, comunicação, crianças e neurodesenvolvimento, sempre com a referência completa; os dados de exercício são construídos e nenhum caso corresponde a uma pessoa real. Mas as perguntas que se aprendem a fazer não são de uma profissão. Quantos eram? Qual foi a diferença? Quão incerta é? O desenho permite dizer "causa"? O que mais podia explicar isto? Aplica-se à pessoa que tenho à frente? Quem lê investigação em psicologia, em educação ou noutra área da saúde faz exatamente as mesmas.
+O livro nasceu na terapia da fala e os exemplos vêm de estudos sobre linguagem, comunicação, crianças e neurodesenvolvimento, sempre com a referência completa; os dados de exercício são construídos e nenhum caso corresponde a uma pessoa real. As perguntas que se aprendem a fazer (quantos eram, qual foi a diferença, quão incerta é, se o desenho permite dizer "causa", o que mais podia explicar o resultado, se se aplica à pessoa que temos à frente) são as mesmas para quem lê investigação em psicologia, em educação ou noutra área da saúde.
 
 ## Que atitude ajuda
 
-Duas. Desconfiar devagar: um número num artigo nunca diz mais do que o desenho do estudo permite, e a pergunta "o que mais podia explicar isto?" serve para quase tudo. Ler criticamente não é partir do princípio de que o estudo está errado; é perceber o que foi feito, o que os resultados sustentam e onde começa a incerteza.
+Ajuda ler devagar e perguntar, a cada número, o que mais podia explicá-lo, porque um número num artigo nunca diz mais do que o desenho do estudo permite. Ler criticamente é perceber o que foi feito, o que os resultados sustentam e onde começa a incerteza, sem partir do princípio de que o estudo está errado.
 
-E aceitar não perceber à primeira. O valor p, o intervalo de confiança e a diferença entre correlação e causa enganam gente experiente, e é por isso que aqui se parte da intuição e se vai desmontando.
+E ajuda contar com não perceber à primeira. O valor p, o intervalo de confiança e a diferença entre correlação e causa enganam gente experiente, e é por isso que cada capítulo parte das respostas erradas mais comuns.
 
 ## Um livro em construção
 
