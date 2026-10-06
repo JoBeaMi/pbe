@@ -8,21 +8,27 @@ Cresce ao longo do semestre. Cada entrada tem o termo em português, o equivalen
 
 **Correlação** (correlation), capítulos 2 e 3: medida de quanto duas medidas variam juntas nas mesmas pessoas. O coeficiente r vai de −1 a 1, e zero quer dizer que não há relação.
 
-**d de Cohen** (Cohen's d), capítulo 3: a diferença entre dois grupos dividida pelo desvio-padrão; diz a quantos desvios-padrão a diferença corresponde.
+**d de Cohen** (Cohen's d), capítulo 3: a diferença entre dois grupos dividida pelo desvio-padrão, que diz a quantos desvios-padrão a diferença corresponde.
 
-**Desvio-padrão** (standard deviation, SD), capítulo 2: a distância típica de cada pessoa à média do grupo.
+**Desvio-padrão** (standard deviation, SD), capítulo 2: a distância a que as pessoas costumam estar da média do grupo.
+
+**Enunciado** (utterance), capítulo 1: cada fala de uma pessoa numa conversa. É a unidade em que se contam os turnos correspondidos.
 
 **Especificidade** (specificity), capítulo 2: das pessoas que não têm o problema, a percentagem a quem o rastreio dá resultado negativo.
 
 **Estatisticamente significativo** (statistically significant), capítulo 3: com valor p abaixo de um limite escolhido antes do estudo, por tradição ,05. Não quer dizer grande nem importante.
 
-**Fiabilidade** (reliability), capítulo 2: consistência de um instrumento; dá o mesmo resultado quando se repete a medida, quando muda o avaliador e quando se comparam os itens entre si.
+**Fiabilidade** (reliability), capítulo 2: consistência de um instrumento, que dá o mesmo resultado quando se repete a medida, quando muda o avaliador e quando se comparam os itens entre si.
 
 **Grupo de controlo** (control group), capítulo 1: o grupo que não faz a intervenção e que mostra o que teria acontecido sem ela.
 
-**Hipótese nula** (null hypothesis), capítulo 3: a suposição de que a intervenção não faz nada, ou de que não há diferença nem relação; é a supor que ela é verdadeira que se calcula o valor p.
+**Hipótese nula** (null hypothesis), capítulo 3: a suposição de que a intervenção não faz nada, ou de que não há diferença nem relação. O valor p calcula-se a supor que ela é verdadeira.
+
+**Inferência** (inference), capítulo 3: passar do que se mediu na amostra para o que se diz da população. Vem sempre acompanhada da incerteza.
 
 **Intervalo de confiança** (confidence interval, CI), capítulo 3: o conjunto dos valores do efeito verdadeiro que são compatíveis com os dados do estudo.
+
+**Magnitude do efeito** (effect size), capítulo 3: o tamanho da diferença entre os grupos, na unidade da medida ou em desvios-padrão. Também se diz tamanho do efeito.
 
 **Média** (mean), capítulo 1: a soma dos valores a dividir pelo número de pessoas.
 
@@ -37,8 +43,6 @@ Cresce ao longo do semestre. Cada entrada tem o termo em português, o equivalen
 **Redução absoluta do risco** (absolute risk reduction, ARR), capítulo 3: a diferença entre a percentagem de pessoas com o problema no grupo de controlo e no grupo de intervenção.
 
 **Sensibilidade** (sensitivity), capítulo 2: das pessoas que têm o problema, a percentagem a quem o rastreio dá resultado positivo.
-
-**Tamanho do efeito** (effect size), capítulo 3: o tamanho da diferença entre os grupos, na unidade da medida ou em desvios-padrão.
 
 **Teste t** (t test), capítulo 3: teste usado para comparar duas médias, de dois grupos diferentes (amostras independentes) ou das mesmas pessoas medidas duas vezes (amostras emparelhadas).
 

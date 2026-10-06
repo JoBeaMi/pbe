@@ -1,57 +1,38 @@
 # Como usar este livro {.unnumbered}
 
-Os capítulos seguem a ordem de uma aula, e a aula tem sempre três vozes: o artigo, a turma e o caminho. O artigo fala primeiro, com a frase real que lemos; a turma responde, com o que ficou no quadro; e depois vem o caminho entre essas respostas e o conceito. A estas três vozes chamamos o fio. A definição só aparece no fim do capítulo, e a ordem é de propósito: a definição aproveita-se mais depois de teres tentado responder sem ela.
+Este livro ensina a ler resultados de investigação e a decidir com eles. Cada capítulo corresponde a uma aula e está organizado sempre da mesma maneira, que é a ordem pela qual a aula acontece. Esta página explica essa organização, o que fazer em cada parte e o que é preciso ter à mão.
 
-Lê-se assim: quando chegares à frase do artigo, pára e responde-lhe tu antes de ler o quadro. Nos quizzes, escolhe antes de carregar em "Verificar" e lê a explicação mesmo quando acertas, porque é ela que diz porque é que as outras opções estão erradas, e são essas as leituras que vais encontrar em artigos publicados.
+## Como está organizado cada capítulo
 
-Cada capítulo corresponde a uma aula e fica visível depois dela. O percurso da tua cadeira, na parte final do livro, diz que capítulo vem depois de que aula e o que ler antes da seguinte; essas leituras são de acesso livre, com o DOI na página "Para ler", e são o que a aula seguinte vai usar. O mínimo de cada capítulo é o fio e a secção "O que fica"; os exercícios e "Para ler mais" são para quando quiseres ir mais longe, ou para quando o trabalho o pedir.
+Cada capítulo parte de uma frase real, tirada de um artigo publicado, e de uma pergunta sobre essa frase, que é o título do capítulo. A seguir vem o que uma turma respondeu a essa pergunta, e só depois a explicação. A definição do conceito aparece no fim da explicação. Esta ordem é de propósito, porque uma definição percebe-se melhor depois de se ter tentado responder sem ela.
 
-O excerto abaixo mostra como se lê; é do primeiro capítulo, "Ler um resultado", e as respostas da turma são exemplos até a aula acontecer, altura em que são substituídas pelas respostas reais, sem nomes.
+| Parte do capítulo | O que é | O que fazes |
+|---|---|---|
+| O artigo | A frase do artigo, com as partes que o capítulo explica marcadas a amarelo ou a rosa | Lês a frase e respondes à pergunta do título antes de continuares |
+| A turma, no quadro | As respostas mais comuns de uma turma, sem nomes | Vês se a tua resposta é uma delas |
+| A explicação | A leitura da frase passo a passo, com os números do artigo, figuras e exemplos | Lês com a frase do artigo à vista |
+| O que é de facto | A caixa com a definição do conceito | Comparas a definição com a resposta que deste no início |
+| A tua vez | Uma pergunta com três opções | Escolhes antes de carregar em "Verificar" e lês a explicação, mesmo quando acertas |
+| O que fica | O essencial do capítulo em três frases | Confirmas que as consegues explicar por palavras tuas |
+| Exercícios | Frases de resultados de outros artigos publicados, com a resposta a abrir ao clicar | Respondes por escrito antes de abrir a resposta |
+| Para ler mais | As páginas do manual e os artigos onde o assunto está desenvolvido | Lês o que a página do teu percurso indicar |
 
-::: {.fio}
-::: {.msg}
-<div class="quem">O artigo</div>
-::: {.clip}
-Os cuidadores melhoraram o uso de todas as estratégias de facilitação da linguagem, como os turnos correspondidos ([diferença média ajustada, intervenção menos controlo, 40; intervalo de confiança a 95 % de 34 a 46]{.mk}; [p < ,01]{.mk .p}). As crianças do grupo de intervenção tiveram competências de linguagem recetiva [significativamente]{.mk .p} melhores (5,3; intervalo de confiança a 95 % de 0,15 a 10,4), [mas não de linguagem expressiva]{.mk} (0,37; −4,5 a 5,3; p = ,88).
-<span class="src">Roberts & Kaiser (2015), Pediatrics, 135(4), resumo, secção Results; tradução da docente</span>
-:::
-:::
-::: {.msg .turma}
-<div class="quem">A turma, no quadro (exemplo)</div>
-<span class="b">p < ,01 é quase zero, logo é quase certo que funciona</span>
-<span class="b">"não na expressiva" quer dizer que para falar não serve</span>
-<span class="b">40 é muito? 40 quê?</span>
-:::
-::: {.msg}
-<div class="quem">A explicação</div>
-::: {.jm}
-a terceira é a melhor das três, e é por ela que começo sempre. Quem pergunta "40 quê?" já está a ler o artigo; os outros dois estão a ler o p.
-:::
-::: {.nums}
-<div class="num">40<small>a diferença entre os dois grupos</small></div>
-<div class="num">34 a 46<small>o intervalo de confiança a 95 % dessa diferença</small></div>
-:::
-O 40 é uma diferença entre o grupo que teve a intervenção e o grupo que não teve, numa medida do comportamento dos pais, ajustada às diferenças que já existiam à partida. A unidade e a escala não estão no resumo; estão na secção de Métodos do artigo, e é por isso que "40 quê?" é a pergunta certa. O intervalo de 34 a 46 é o conjunto dos valores da diferença verdadeira que são compatíveis com estes dados; é ele, e não o p, que responde a "é muito?". Como se chega daqui a uma leitura da frase inteira, incluindo o "significativamente" e o "mas não", é o que o capítulo faz.
-:::
-:::
+: {tbl-colwidths="[20,42,38]"}
 
-::: {.quiz data-certa="3"}
-<p class="enunciado">No mesmo ensaio, a linguagem expressiva das crianças não diferiu significativamente entre grupos (0,37; intervalo de confiança a 95 % de −4,5 a 5,3; p = ,88). A conclusão legítima é:</p>
-<label><input type="radio" name="q01" value="1"> a intervenção não melhora a linguagem expressiva</label>
-<label><input type="radio" name="q01" value="2"> a intervenção melhora, mas o efeito é pequeno</label>
-<label><input type="radio" name="q01" value="3"> este ensaio não conseguiu mostrar uma diferença; o intervalo admite tanto uma perda de 4,5 como um ganho de 5,3</label>
-<button type="button">Verificar</button> <span class="resultado"></span>
-<p class="explicacao">Ausência de evidência não é evidência de ausência (Altman & Bland, 1995). Se escolheste a primeira, é a leitura mais comum, incluindo em artigos publicados; o capítulo sobre o valor p explica porque é que está errada.</p>
-:::
+As notas assinaladas com "JM" são comentários meus à margem. As respostas da turma levam a indicação "(exemplo)" enquanto a aula correspondente não tiver acontecido, e depois são substituídas pelas respostas reais.
 
-## O fim de cada capítulo
+## Como ler
 
-Três secções fixas. "O que fica": a ideia em três frases. "Exercícios": frases de resultados retiradas de artigos publicados, com a pergunta de sempre (que teste foi, foi significativo, qual o efeito, que conclusão é legítima). "Para ler mais": as páginas do livro de texto da cadeira e um ou dois artigos, todos verificados.
+Lê cada capítulo pela ordem em que está escrito. Quando chegares à frase do artigo, responde antes de veres o quadro da turma, porque é a tua resposta que a explicação vai confirmar ou corrigir. Nas perguntas de escolha, lê a explicação mesmo quando acertas. É ela que diz porque estão erradas as outras opções, e essas são as leituras que vais encontrar em artigos publicados.
 
-## O Jamovi
+Se tiveres pouco tempo, o mínimo de cada capítulo é a explicação e a secção "O que fica". Os exercícios e a secção "Para ler mais" servem para consolidar e para quando o trabalho da cadeira os pedir.
 
-Nos capítulos sobre números reproduzes no Jamovi o que os artigos fizeram. Instala-o a partir de [jamovi.org](https://www.jamovi.org/) (gratuito, Mac e Windows). O ficheiro de dados das aulas é distribuído pela docente e é construído: não há nele nenhuma criança real. Não uses dados de utentes em nenhum exercício.
+## A ordem dos capítulos e o percurso da tua cadeira
 
-## O livro de texto
+O livro tem três partes, das quais a primeira ensina a ler os números de um artigo, a segunda a passar de uma dúvida clínica a um protocolo, e a terceira a levar a evidência até à decisão com o utente. Cada capítulo fica visível depois da aula a que corresponde. A página do percurso da tua cadeira, na parte final do livro, diz que capítulo vem depois de cada aula e o que ler antes da aula seguinte. Essas leituras são de acesso livre e têm o DOI na página [Para ler](bibliografia.qmd).
 
-O manual que acompanha este livro é o de @irwin2026; cada "Para ler mais" indica as páginas. O ensaio citado acima é o de @roberts2015.
+## O que é preciso ter
+
+Nos capítulos sobre números repetes no Jamovi as análises que os artigos fizeram. O Jamovi é gratuito, funciona em Mac e em Windows e instala-se a partir de [jamovi.org](https://www.jamovi.org/). Os ficheiros de dados estão nos próprios capítulos e são construídos, o que quer dizer que não há neles nenhuma criança real. Não uses dados de utentes em nenhum exercício.
+
+O manual que acompanha este livro é o de @irwin2026, e cada secção "Para ler mais" indica as páginas.
