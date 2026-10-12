@@ -6,33 +6,32 @@ Este é o percurso da unidade curricular Métodos de Pesquisa em Terapia da Fala
 |---|---|---|---|
 | 22 set | Apresentação da unidade curricular e do trabalho (regente) | — | — |
 | 29 set | Ler um resultado; descrever e desconfiar | 01 e 02 | Altman e Bland (1995); Patino e Ferreira (2015) |
-| 6 out | O valor p; testes no Jamovi; quantas pessoas tratar para uma melhorar | 03 | Ferreira e Patino (2015), "What does the p value really mean?" |
-| 13 out | Da dúvida à pergunta; bases de dados e gestores de referências | 04 | Richardson et al. (1995) |
+| 6 out | O acaso numa amostra, com uma moeda; a média e o desvio-padrão | 03 | Ferreira e Patino (2015), "What does the p value really mean?" |
+| 13 out | Da dúvida clínica à pergunta e à pesquisa | 04 | Irwin e Donai (2026), pp. 103–106 |
 | 20 out | Ética e tipos de estudo | 05 | Declaração de Helsínquia, versão de 2024; Munn et al. (2018) |
 | 27 out | Prática baseada na evidência e análise crítica; risco de viés | 06 | Ebbels et al. (2019) |
 | 3 nov | Revisão sistemática; escrita científica | 07 | Donato e Donato (2019); PRISMA 2020 |
 | 10 nov | Defesa oral | — | — |
 | 17 nov, 23:59 | Entrega do protocolo escrito | — | — |
 
-As leituras estão em "Para ler", com o DOI de cada uma; todas são de acesso livre. Para a sessão de 6 de outubro é preciso ter o Jamovi instalado (gratuito, [jamovi.org](https://www.jamovi.org)) e trazer o computador.
+As leituras estão em "Para ler", com o DOI de cada uma; todas são de acesso livre. Para a sessão de 13 de outubro, cada grupo traz um portátil.
 
 ## O trabalho
 
-O trabalho é individual e tem duas partes: um protocolo abreviado de revisão sistemática, escrito, sobre uma pergunta clínica em terapia da fala que nasce de uma dúvida do próprio estudante (60 % da classificação; entrega a 17 de novembro, até às 23:59), e a defesa oral desse protocolo, em aula, a 10 de novembro (40 %). O enunciado completo, com as oito secções do protocolo, as duas grelhas e as regras, está aqui: [enunciado do trabalho (docx)](enunciado-mptf-ii-2026.docx). A versão que conta é a que foi apresentada em aula a 22 de setembro.
+O trabalho é feito em grupos de três estudantes e tem duas partes. A primeira é um protocolo abreviado de revisão sistemática, escrito pelo grupo, sobre uma pergunta clínica em terapia da fala que nasce de uma dúvida de um dos seus elementos (60 % da classificação, igual para os três, com entrega a 17 de novembro, até às 23:59). A segunda é a defesa oral desse protocolo, feita pelo grupo em aula a 10 de novembro, em que cada estudante é avaliado individualmente (40 %). O enunciado completo, com as oito secções do protocolo, as duas grelhas e as regras, está em [enunciado do trabalho (PDF)](enunciado-mptf-ii-2026.pdf). A versão que conta é a de 13 de outubro de 2026.
 
-![As oito secções do protocolo abreviado e o passo da defesa oral.](../imagens/fig_caminho.png){width=100%}
+![As oito secções do protocolo abreviado e o passo da defesa oral.](../imagens/fig_seccoes_trabalho.png){width=100%}
 
 ### Calendário do trabalho
 
 | Data | Etapa |
 |---|---|
-| 6 out | Dúvida clínica, numa frase, entregue em aula |
-| 13 out | Pergunta PICO(T) ou PESICO em rascunho, trabalhada em aula |
-| até 20 out | Pedido de validação da pergunta, por email |
+| 13 out | Dúvida escolhida e pergunta em rascunho, na folha do grupo, entregue em aula |
+| até 20 out | Pedido de validação da pergunta, por email, um por grupo |
 | até 24 out | Resposta da docente, por escrito |
 | até 31 out | Validação de uma pergunta alternativa, se a primeira não tiver sido aceite |
 | 27 out | Pesquisa executada e registada, em aula |
-| 3 nov | Rascunho completo, para feedback em aula; sorteio da ordem das defesas |
+| 3 nov | Rascunho completo, para feedback em aula, e sorteio da ordem das defesas |
 | 10 nov | Defesa oral |
 | 17 nov, 23:59 | Entrega do protocolo escrito |
 
@@ -40,7 +39,7 @@ Uma pergunta não validada até 24 de outubro não pode ser usada no trabalho. O
 
 ### Como se chega à nota
 
-Protocolo escrito (cada critério de 0 a 20, ponderado): dúvida, pergunta e o que já se sabe, 30 (sem os números da revisão publicada, este critério não passa de 13); critérios de elegibilidade, 15; pesquisa e triagem, 30; risco de viés e síntese, 10; escrita, formato e integridade, 15. Defesa oral: cenário clínico e pergunta, 30; método defendido, 30; "e agora?", 25; tempo e perguntas, 15. A aprovação exige classificação final igual ou superior a 10 valores. Os descritores completos de cada critério estão no enunciado.
+Protocolo escrito (cada critério de 0 a 20, ponderado): dúvida, pergunta e o que já se sabe, 30 (sem os números da revisão publicada, este critério não passa de 13); critérios de elegibilidade, 15; pesquisa e triagem, 30; risco de viés e síntese, 10; escrita, formato e integridade, 15. Defesa oral: cenário clínico e pergunta, 30; método defendido, 30; "e agora?", 25; tempo e perguntas, 15. A classificação do protocolo escrito é igual para os três elementos do grupo e a da defesa oral é individual. A aprovação exige classificação final igual ou superior a 10 valores. Os descritores completos de cada critério estão no enunciado.
 
 ## Contacto
 
