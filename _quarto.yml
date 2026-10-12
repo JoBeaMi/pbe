@@ -64,6 +64,11 @@ book:
   appendices:
     - glossario.qmd
 
+# Liga os termos do glossário nos capítulos (ver o cabeçalho do ficheiro)
+filters:
+  - at: pre-ast
+    path: _filtros/termos-do-glossario.lua
+
 bibliography: referencias.bib
 csl: apa.csl
 

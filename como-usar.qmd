@@ -1,10 +1,53 @@
 # Como usar este livro {.unnumbered}
 
-Este livro ensina a ler resultados de investigação e a decidir com eles. Cada capítulo corresponde a uma aula e está organizado sempre da mesma maneira, que é a ordem pela qual a aula acontece. Esta página explica essa organização, o que fazer em cada parte e o que é preciso ter à mão.
+Este livro ensina a usar a investigação nas decisões clínicas de um terapeuta da fala. Serve a quem tem uma dúvida sobre um utente e quer saber se a investigação ajuda a responder-lhe, seja a dúvida sobre o teste a usar, sobre o que é de esperar que aconteça a uma criança ou sobre a intervenção a escolher. Serve também a quem tem um artigo à frente, enviado por um colega ou encontrado numa pesquisa, e não sabe o que os resultados permitem concluir. Esta página diz por onde começar em cada caso, onde está cada assunto, como está organizado cada capítulo e o que é preciso ter à mão.
+
+## Por onde começar
+
+As duas situações estão ligadas, porque uma dúvida leva a procurar artigos e um artigo, depois de lido, pode mostrar que a pergunta que te interessa é outra. Por isso os capítulos podem ler-se pela ordem em que estão ou pela ordem em que precisares deles.
+
+### Tenho uma dúvida, e agora?
+
+O capítulo 4, que está a ser escrito, ensina a ver de que tipo é a dúvida, porque uma dúvida sobre uma intervenção, uma sobre um teste e uma sobre o que vai acontecer a uma criança não se respondem com os mesmos estudos. Ensina depois a escrever a dúvida como uma pergunta que se possa pesquisar e a procurar se alguém já lhe respondeu. Quando encontrares um artigo ou uma revisão, passa para os capítulos que ensinam a ler os resultados.
+
+### Encontrei um artigo, e agora?
+
+Antes de leres os números, vê a que pergunta o artigo responde, quem foi estudado e como. Os capítulos 1 a 3 partem de estudos de intervenção, mas as percentagens, as médias, os desvios-padrão, os intervalos de confiança e os valores p que ensinam a ler aparecem também em estudos sobre avaliação, prognóstico ou causas. Os resultados de estudos qualitativos, que não se resumem a números, ainda não têm capítulo neste livro. Lê-os por ordem, porque o capítulo 3 volta à frase do capítulo 1. O [capítulo 1](01-ler-um-resultado.qmd) lê uma frase de resultados, o [capítulo 2](02-descrever-e-desconfiar.qmd) lê a tabela que descreve os participantes e o [capítulo 3](03-o-valor-p.qmd) lê o intervalo de confiança e o valor p. Se o artigo é sobre um teste ou um rastreio, vai para as duas últimas secções do capítulo 2, que tratam da [fiabilidade e da validade](02-descrever-e-desconfiar.qmd#fiabilidade-e-validade-de-um-instrumento) e do [rastreio](02-descrever-e-desconfiar.qmd#um-rastreio-que-acerta-90).
+
+Pode acontecer que, depois de leres o artigo, percebas que ele não responde à tua dúvida, porque as pessoas estudadas ou a pergunta dos autores são outras. Nesse caso voltas ao capítulo 4, escreves a tua pergunta e procuras outra evidência.
+
+### Depois de ler
+
+A terceira parte do livro ensina a ver se um resultado se aplica à pessoa que tens à frente, a decidir com ela e com a família e a agir quando não há evidência, e ainda não está escrita.
+
+## Onde está cada assunto
+
+Se procuras um número ou uma palavra que encontraste num artigo, esta tabela diz em que secção estão explicados.
+
+| O que queres saber | Onde está |
+|---|---|
+| O que é que um resultado está a comparar e em que unidade | [Capítulo 1](01-ler-um-resultado.qmd) |
+| Porque é que uma média pode enganar | Capítulo 1, [Uma média pode descrever mal quase toda a gente](01-ler-um-resultado.qmd#uma-média-pode-descrever-mal-quase-toda-a-gente) |
+| O que é o desvio-padrão | Capítulo 2, [A média e o desvio-padrão](02-descrever-e-desconfiar.qmd#a-média-e-o-desvio-padrão) |
+| O que são os números da tabela que descreve os participantes | Capítulo 2, [Como ler uma Tabela 1](02-descrever-e-desconfiar.qmd#como-ler-uma-tabela-1) |
+| Se o estudo permite dizer que uma coisa causa a outra | Capítulo 2, [Correlação e causa](02-descrever-e-desconfiar.qmd#correlação-e-causa) |
+| O que quer dizer um teste ser fiável e válido | Capítulo 2, [Fiabilidade e validade de um instrumento](02-descrever-e-desconfiar.qmd#fiabilidade-e-validade-de-um-instrumento) |
+| O que vale um resultado positivo num rastreio | Capítulo 2, [Um rastreio que "acerta 90 %"](02-descrever-e-desconfiar.qmd#um-rastreio-que-acerta-90) |
+| O que é o intervalo de confiança | Capítulo 3, [O resultado de um estudo é uma estimativa](03-o-valor-p.qmd#o-resultado-de-um-estudo-é-uma-estimativa) |
+| O que quer dizer p &lt; ,05 | Capítulo 3, [Da moeda ao valor p](03-o-valor-p.qmd#da-moeda-ao-valor-p) |
+| O que quer dizer "estatisticamente significativo" | Capítulo 3, ["Estatisticamente significativo" é uma convenção](03-o-valor-p.qmd#estatisticamente-significativo-é-uma-convenção) |
+| Se uma diferença significativa é importante | Capítulo 3, [A magnitude do efeito](03-o-valor-p.qmd#a-magnitude-do-efeito) |
+| Quantas pessoas é preciso tratar para uma melhorar | Capítulo 3, [Quantas crianças é preciso tratar para uma melhorar](03-o-valor-p.qmd#quantas-crianças-é-preciso-tratar-para-uma-melhorar) |
+| O que concluir de um resultado não significativo | Capítulo 3, [Quando o resultado não é significativo](03-o-valor-p.qmd#quando-o-resultado-não-é-significativo) |
+| Que teste estatístico é este | Capítulo 3, [Os testes que aparecem nos artigos](03-o-valor-p.qmd#os-testes-que-aparecem-nos-artigos) |
+
+: {tbl-colwidths="[45,55]"}
+
+Nos capítulos, um termo que foi ensinado noutro capítulo aparece sublinhado a ponteado da primeira vez. Ao passar o rato por cima vês a definição, e ao clicar vais para o [glossário](glossario.qmd), que indica a secção onde o termo é explicado.
 
 ## Como está organizado cada capítulo
 
-Cada capítulo parte de uma frase real, tirada de um artigo publicado, e de uma pergunta sobre essa frase, que é o título do capítulo. A seguir vem o que uma turma respondeu a essa pergunta, e só depois a explicação. A definição do conceito aparece no fim da explicação. Esta ordem é de propósito, porque uma definição percebe-se melhor depois de se ter tentado responder sem ela.
+Cada capítulo que ensina a ler resultados parte de uma frase real, tirada de um artigo publicado, e de uma pergunta sobre essa frase, que é o título do capítulo. A seguir vem o que uma turma respondeu a essa pergunta, e só depois a explicação. A definição do conceito aparece no fim da explicação. Esta ordem é de propósito, porque uma definição percebe-se melhor depois de se ter tentado responder sem ela.
 
 | Parte do capítulo | O que é | O que fazes |
 |---|---|---|
@@ -15,7 +58,7 @@ Cada capítulo parte de uma frase real, tirada de um artigo publicado, e de uma 
 | A tua vez | Uma pergunta com três opções | Escolhes antes de carregar em "Verificar" e lês a explicação, mesmo quando acertas |
 | O que fica | O essencial do capítulo em três frases | Confirmas que as consegues explicar por palavras tuas |
 | Exercícios | Frases de resultados de outros artigos publicados, com a resposta a abrir ao clicar | Respondes por escrito antes de abrir a resposta |
-| Para ler mais | As páginas do manual e os artigos onde o assunto está desenvolvido | Lês o que a página do teu percurso indicar |
+| Para ler mais | As páginas do manual e os artigos onde o assunto está desenvolvido | Lês o que te fizer falta, ou o que a página do teu percurso indicar |
 
 : {tbl-colwidths="[20,42,38]"}
 
@@ -25,14 +68,14 @@ As notas assinaladas com "JM" são comentários meus à margem. As respostas da 
 
 Lê cada capítulo pela ordem em que está escrito. Quando chegares à frase do artigo, responde antes de veres o quadro da turma, porque é a tua resposta que a explicação vai confirmar ou corrigir. Nas perguntas de escolha, lê a explicação mesmo quando acertas. É ela que diz porque estão erradas as outras opções, e essas são as leituras que vais encontrar em artigos publicados.
 
-Se tiveres pouco tempo, o mínimo de cada capítulo é a explicação e a secção "O que fica". Os exercícios e a secção "Para ler mais" servem para consolidar e para quando o trabalho da cadeira os pedir.
+Se tiveres pouco tempo, o mínimo de cada capítulo é responder à pergunta do título, ler a explicação e ler a secção "O que fica". Os exercícios e a secção "Para ler mais" servem para consolidar.
 
-## A ordem dos capítulos e o percurso da tua cadeira
+## O percurso da tua cadeira
 
-O livro tem três partes, das quais a primeira ensina a ler os números de um artigo, a segunda a passar de uma dúvida clínica a um protocolo, e a terceira a levar a evidência até à decisão com o utente. Cada capítulo fica visível depois da aula a que corresponde. A página do percurso da tua cadeira, na parte final do livro, diz que capítulo vem depois de cada aula e o que ler antes da aula seguinte. Essas leituras são de acesso livre e têm o DOI na página [Para ler](bibliografia.qmd).
+Se estás numa cadeira que usa este livro, cada capítulo fica visível depois da aula a que corresponde. A página do percurso da tua cadeira, na parte final do livro, diz que capítulo vem depois de cada aula e o que ler antes da aula seguinte. Essas leituras são de acesso livre e têm o DOI na página [Para ler](bibliografia.qmd).
 
 ## O que é preciso ter
 
-Nos capítulos sobre números repetes no Jamovi as análises que os artigos fizeram. O Jamovi é gratuito, funciona em Mac e em Windows e instala-se a partir de [jamovi.org](https://www.jamovi.org/). Os ficheiros de dados estão nos próprios capítulos e são construídos, o que quer dizer que não há neles nenhuma criança real. Não uses dados de utentes em nenhum exercício.
+Nos capítulos sobre números fazes no Jamovi análises como as que os artigos apresentam. O Jamovi é gratuito, funciona em Mac e em Windows e instala-se a partir de [jamovi.org](https://www.jamovi.org/). Os ficheiros de dados estão nos próprios capítulos e são construídos, o que quer dizer que não há neles nenhuma criança real. Não uses dados de utentes em nenhum exercício.
 
 O manual que acompanha este livro é o de @irwin2026, e cada secção "Para ler mais" indica as páginas.
