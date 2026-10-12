@@ -71,3 +71,13 @@ body.quarto-dark .turma .b, body.quarto-dark .balao { background: #3a3a2a; }
 body.quarto-dark .quiz label:has(input:checked) { background: #3a3a2a; }
 body.quarto-dark mark, body.quarto-dark .mk { color: #101010; }
 body.quarto-dark .def::before, body.quarto-dark .quiz button { color: #101010; }
+
+/* Termos do glossário nos capítulos: sublinhado a ponteado, definição ao passar o rato */
+a.termo { text-decoration: underline dotted; text-decoration-thickness: 2px; text-decoration-color: var(--tinta); text-underline-offset: .18em; cursor: help; position: relative; }
+@media (hover: hover) {
+  a.termo:hover::after, a.termo:focus-visible::after { content: attr(data-def); position: absolute; left: 0; top: 1.7em; z-index: 30; width: max-content; max-width: min(24rem, 70vw); background: var(--papel); color: var(--tinta); border: 2px solid var(--tinta); box-shadow: 4px 4px 0 var(--tinta); padding: .55rem .8rem; font-family: "Newsreader", Georgia, serif; font-size: .98rem; font-weight: 400; font-style: normal; line-height: 1.4; letter-spacing: 0; text-transform: none; white-space: normal; }
+}
+/* A entrada do glossário a que se chega por uma ligação fica marcada */
+.gl-entrada { scroll-margin-top: 5rem; }
+.gl-entrada:target { background: #fffbd0; outline: 2px solid var(--tinta); outline-offset: .45rem; }
+body.quarto-dark .gl-entrada:target { background: #3a3a2a; }
